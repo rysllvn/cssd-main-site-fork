@@ -29,7 +29,7 @@
 			<svelte:fragment slot="lead">
 				<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
 			</svelte:fragment>
-			Challenged Sailors San Diego
+			<div class="font-bold text-xl">Challenged Sailors San Diego</div>
 			<svelte:fragment slot="trail">
 				<button type="button" class="btn variant-filled">Facebook</button>
 				<button type="button" class="btn variant-filled">Instagram</button>
@@ -44,6 +44,7 @@
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
+				<li><a href="/calendar">Calendar</a></li>
 				<li><a href="/about">Participate</a></li>
 				<li><a href="/about">Volunteer</a></li>
 				<li><a href="/about">Give</a></li>
@@ -59,6 +60,6 @@
 	<!-- Router Slot -->
 	<slot />
 	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
+	<svelte:fragment slot="pageFooter">footer</svelte:fragment>
 	<!-- (footer) -->
 </AppShell>
