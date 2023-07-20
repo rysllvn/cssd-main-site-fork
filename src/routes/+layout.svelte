@@ -7,33 +7,63 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
+	// https://iconify.design/
 	import 'iconify-icon';
 
-	import {
-		AppBar,
-		AppRail,
-		AppRailAnchor,
-		AppRailTile,
-		AppShell,
-		LightSwitch
-	} from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 
-	import logo from '$lib/assets/cssd-logo.jpg';
+	const navigation = [
+		{ href: '/', text: 'Home' },
+		{ href: '/calendar', text: 'Calendar' },
+		{ href: '/participate', text: 'Participate' },
+		{ href: '/volunteer', text: 'Volunteer' },
+		{ href: 'give', text: 'Give' },
+		{ href: '/about', text: 'About' },
+		{ href: '/contact', text: 'Contact' }
+	];
 
-	let currentTile = 0;
+	function drawerOpen(): void {
+		drawerStore.open({});
+	}
+	function drawerClose(): void {
+		drawerStore.close();
+	}
 </script>
 
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<Drawer>
+	<nav class="list-nav">
+		<ul class="p-10">
+			{#each navigation as { href, text }}
+				<li on:click={drawerClose} on:keyup={drawerClose}>
+					<a {href}>{text}</a>
+				</li>
+			{/each}
+		</ul>
+	</nav>
+</Drawer>
+
+<AppShell slotSidebarLeft="bg-surface-500/5 w-0 md:w-48 md:p-4">
 	<svelte:fragment slot="header">
 		<AppBar class="shadow-lg">
 			<svelte:fragment slot="lead">
+				<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
+					<span>
+						<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
+							<rect width="100" height="20" />
+							<rect y="30" width="100" height="20" />
+							<rect y="60" width="100" height="20" />
+						</svg>
+					</span>
+				</button>
 				<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
 			</svelte:fragment>
-			<div class="font-bold text-xl">Challenged Sailors San Diego</div>
+			<div class="text-xl">Challenged Sailors San Diego</div>
 			<svelte:fragment slot="trail">
-				<button type="button" class="btn variant-filled">Facebook</button>
-				<button type="button" class="btn variant-filled">Instagram</button>
-				<button type="button" class="btn variant-filled">Twitter</button>
+				<div class="items-center gap-2 hidden sm:block">
+					<iconify-icon icon="logos:facebook" class="text-4xl" />
+					<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
+					<iconify-icon icon="logos:twitter" class="text-4xl" />
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
@@ -42,14 +72,11 @@
 		<!-- Insert the list: -->
 		<nav class="list-nav">
 			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/calendar">Calendar</a></li>
-				<li><a href="/about">Participate</a></li>
-				<li><a href="/about">Volunteer</a></li>
-				<li><a href="/about">Give</a></li>
-				<li><a href="/about">Contact</a></li>
-				<li><a href="/about">Resources</a></li>
+				{#each navigation as { href, text }}
+					<li>
+						<a {href}>{text}</a>
+					</li>
+				{/each}
 			</ul>
 		</nav>
 		<!-- --- -->
@@ -60,6 +87,6 @@
 	<!-- Router Slot -->
 	<slot />
 	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter">footer</svelte:fragment>
+	<svelte:fragment slot="pageFooter">footer - 2023</svelte:fragment>
 	<!-- (footer) -->
 </AppShell>
