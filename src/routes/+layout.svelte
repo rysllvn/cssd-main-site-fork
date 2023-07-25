@@ -13,13 +13,14 @@
 	import { AppBar, AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 
 	const navigation = [
+		{ href: '/go-sailing', text: 'Go Sailing!' },
 		{ href: '/', text: 'Home' },
 		{ href: '/calendar', text: 'Calendar' },
-		{ href: '/participate', text: 'Participate' },
 		{ href: '/volunteer', text: 'Volunteer' },
-		{ href: 'give', text: 'Give' },
+		{ href: '/give', text: 'Give' },
 		{ href: '/about', text: 'About' },
-		{ href: '/contact', text: 'Contact' }
+		{ href: '/contact', text: 'Contact' },
+		{ href: '/faq', text: 'FAQ' }
 	];
 
 	function drawerOpen(): void {
@@ -55,9 +56,14 @@
 						</svg>
 					</span>
 				</button>
-				<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
+				<a class="flex items-center gap-2" href="/">
+					<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
+					<div class="text-xl">Challenged Sailors San Diego</div>
+				</a>
 			</svelte:fragment>
-			<div class="text-xl">Challenged Sailors San Diego</div>
+			<a class="w-fit btn variant-filled-primary font-bold text-2xl" href="/go-sailing"
+				>Go Sailing!</a
+			>
 			<svelte:fragment slot="trail">
 				<div class="items-center gap-2 hidden sm:block">
 					<iconify-icon icon="logos:facebook" class="text-4xl" />
@@ -85,8 +91,19 @@
 	<!-- (sidebarRight) -->
 	<!-- (pageHeader) -->
 	<!-- Router Slot -->
-	<slot />
+	<main class="container mx-auto p-8 space-y-8 h-full">
+		<slot />
+	</main>
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter">footer - 2023</svelte:fragment>
 	<!-- (footer) -->
 </AppShell>
+
+<style>
+	main {
+		background-image: url($lib/assets/all-boats.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+	}
+</style>

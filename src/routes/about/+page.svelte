@@ -1,9 +1,41 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
+
+	const management = [
+		{
+			photo: null,
+			name: 'Peter Phillips',
+			title: 'President'
+		}
+	];
 </script>
 
 <main class="container mx-auto p-8 space-y-8">
 	<h1 class="h1">About</h1>
+
+	<section class="flex flex-col gap-5">
+		<h2 class="h2">Why adaptive sailing?</h2>
+		<p>
+			The US Census Bureau estimated that nearly one in five people in our country have a
+			disability. Many of these people have had to learn to live with restrictions on their mobility
+			and independence. Challenged Sailors San Diego’s adaptive sailing program is designed to
+			minimize these restrictions for our sailors. Learning the skills to maneuver a boat throughout
+			the waters of San Diego Bay provides a sense of confidence, autonomy, and accomplishment that
+			can have a significant positive effect on many aspects of the sailors’ lives.
+		</p>
+		<p>
+			The volunteers and participants of Challenged Sailors San Diego have experienced the
+			transformative nature of adaptive sailing personally. Some are very experienced sailors, some
+			are beginners but all have seen a tremendous improvement in their lives through adaptive
+			sailing.
+		</p>
+		<p>
+			Capt. Jack Sparrow - in Pirates of the Caribbean - said, “a sailboat is not just a mast or
+			sails or a rudder; a sailboat is freedom”. For those with a disability that significantly
+			limits their mobility on land, that statement is a reality.
+		</p>
+	</section>
+
 	<section>
 		<h2 class="h2 mb-4">Our Mission</h2>
 		<p>
