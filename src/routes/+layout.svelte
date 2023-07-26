@@ -95,19 +95,8 @@
 	<!-- (sidebarRight) -->
 	<!-- (pageHeader) -->
 	<!-- Router Slot -->
-	<main class="container mx-auto p-8 space-y-8 h-full">
-		<slot />
-	</main>
+	<slot />
 	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter">footer - 2023</svelte:fragment>
 	<!-- (footer) -->
+	<svelte:fragment slot="pageFooter">footer - 2023</svelte:fragment>
 </AppShell>
-
-<style>
-	main {
-		background-image: url($lib/assets/all-boats.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 100%;
-	}
-</style>
