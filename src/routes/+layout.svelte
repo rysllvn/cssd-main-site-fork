@@ -58,17 +58,21 @@
 				</button>
 				<a class="flex items-center gap-2" href="/">
 					<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
-					<div class="text-xl">Challenged Sailors San Diego</div>
+					<div class="md:hidden text-lg">CSSD</div>
+					<div class="hidden md:block text-xl">Challenged Sailors San Diego</div>
 				</a>
 			</svelte:fragment>
 			<a class="w-fit btn variant-filled-primary font-bold text-2xl" href="/go-sailing"
 				>Go Sailing!</a
 			>
 			<svelte:fragment slot="trail">
-				<div class="items-center gap-2 hidden sm:block">
-					<iconify-icon icon="logos:facebook" class="text-4xl" />
-					<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
-					<iconify-icon icon="logos:twitter" class="text-4xl" />
+				<div class="items-center gap-3 hidden sm:flex">
+					<a href="https://www.facebook.com/challengedsailors/">
+						<iconify-icon icon="logos:facebook" class="text-4xl" />
+					</a>
+					<a href="https://www.instagram.com/challengedsailors">
+						<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
+					</a>
 				</div>
 			</svelte:fragment>
 		</AppBar>
