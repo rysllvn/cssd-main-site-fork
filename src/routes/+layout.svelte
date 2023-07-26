@@ -13,8 +13,8 @@
 	import { AppBar, AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 
 	const navigation = [
-		{ href: '/go-sailing', text: 'Go Sailing!' },
 		{ href: '/', text: 'Home' },
+		{ href: '/go-sailing', text: 'Go Sailing!' },
 		{ href: '/calendar', text: 'Calendar' },
 		{ href: '/volunteer', text: 'Volunteer' },
 		{ href: '/give', text: 'Give' },
@@ -59,7 +59,11 @@
 				<a class="flex items-center gap-2" href="/">
 					<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
 					<div class="md:hidden text-lg">CSSD</div>
-					<div class="hidden md:block text-xl">Challenged Sailors San Diego</div>
+					<!-- <div class="hidden md:block text-xl">Challenged Sailors San Diego</div> -->
+					<span
+						class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-3xl"
+						>Challenged Sailors San Diego</span
+					>
 				</a>
 			</svelte:fragment>
 			<a class="w-fit btn variant-filled-primary font-bold text-2xl" href="/go-sailing"
@@ -80,7 +84,7 @@
 
 	<svelte:fragment slot="sidebarLeft">
 		<!-- Insert the list: -->
-		<nav class="list-nav">
+		<!-- <nav class="list-nav">
 			<ul>
 				{#each navigation as { href, text }}
 					<li>
@@ -88,7 +92,7 @@
 					</li>
 				{/each}
 			</ul>
-		</nav>
+		</nav> -->
 		<!-- --- -->
 	</svelte:fragment>
 
@@ -100,3 +104,11 @@
 	<!-- (footer) -->
 	<svelte:fragment slot="pageFooter">footer - 2023</svelte:fragment>
 </AppShell>
+
+<style>
+	main {
+		background-image: url($lib/assets/all-boats.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
