@@ -10,7 +10,10 @@
 	// https://iconify.design/
 	import 'iconify-icon';
 
+	// Skeleton Components
 	import { AppBar, AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
+
+	import logo from '$lib/assets/cssd-logo.jpg';
 
 	const navigation = [
 		{ href: '/', text: 'Home' },
@@ -57,8 +60,7 @@
 					</span>
 				</button>
 				<a class="flex items-center gap-2" href="/">
-					<iconify-icon icon="noto-v1:sailboat" class="text-4xl" />
-					<div class="md:hidden text-lg">CSSD</div>
+					<img class="rounded-lg w-24" src={logo} alt="Challenged Sailors San Diego Logo" />
 					<!-- <div class="hidden md:block text-xl">Challenged Sailors San Diego</div> -->
 					<span
 						class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-3xl"
@@ -102,13 +104,23 @@
 	<slot />
 	<!-- ---- / ---- -->
 	<!-- (footer) -->
-	<svelte:fragment slot="pageFooter">footer - 2023</svelte:fragment>
+	<svelte:fragment slot="pageFooter">
+		<footer>
+			<div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+				<div class="sm:flex sm:items-center sm:justify-between">
+					<img class="w-48 md:w-64 rounded-lg" src={logo} alt="Challenged Sailors San Diego Logo" />
+					<ul
+						class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+					>
+						<li>
+							<a href="/about" class="mr-4 hover:underline md:mr-6">About</a>
+						</li>
+						<li>
+							<a href="/contact" class="hover:underline">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</svelte:fragment>
 </AppShell>
-
-<style>
-	main {
-		background-image: url($lib/assets/all-boats.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-</style>
