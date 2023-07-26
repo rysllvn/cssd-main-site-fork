@@ -1,5 +1,8 @@
 <script lang="ts">
 	import logo from '$lib/assets/cssd-logo.jpg';
+	import coronado from '$lib/assets/logos/coronado_yacht_club.png';
+	import pointLomaYachtClub from '$lib/assets/logos/point_loma_yacht_club.png';
+	import sdphc from '$lib/assets/logos/sdphc.png';
 </script>
 
 <div id="background" class="w-full h-full">
@@ -22,7 +25,7 @@
 			</div>
 		</header>
 
-		<section class="px-4 flex flex-col lg:flex-row items-center gap-4 justify-between lg:px-20">
+		<section class="px-4 flex flex-col lg:flex-row items-center gap-4 justify-between">
 			<div class="hidden md:flex variant-glass-primary p-2">
 				<iframe
 					style="border-radius: 6px;"
@@ -51,7 +54,10 @@
 			<section class="card card-hover p-3 w-fit variant-glass-secondary flex flex-col text-white">
 				<h2 class="h2 mb-2">Get Involved</h2>
 				<hr />
-				<p class="text-xl mb-3">Volunteers and donations are welcome and appreciated</p>
+				<blockquote class="blockquote m-2 text-lg text-white">
+					“a sailboat is not just a mast or sails or a rudder; a sailboat is freedom.” - Captain
+					Jack Sparrow
+				</blockquote>
 				<div>
 					<a class="w-fit btn variant-filled-secondary" href="/volunteer">Volunteer</a>
 					<a class="w-fit btn variant-filled-tertiary" href="/give">Give</a>
@@ -60,28 +66,20 @@
 		</section>
 		<section class="p-5 card variant-glass-primary mt-36 flex flex-col items-center">
 			<h2 class="h2 mb-6">Sponsors</h2>
-
+			<hr />
 			<section class="grid grid-cols-2 md:grid-cols-3 gap-4">
 				<div>
-					<img
-						class="h-auto max-w-full rounded-lg"
-						src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-						alt=""
-					/>
+					<img class="h-auto max-w-full rounded-lg" src={coronado} alt="" />
 				</div>
 				<div>
 					<img
+						src={pointLomaYachtClub}
 						class="h-auto max-w-full rounded-lg"
-						src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-						alt=""
+						alt="Point Loma Yacht Club Logo"
 					/>
 				</div>
 				<div>
-					<img
-						class="h-auto max-w-full rounded-lg"
-						src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-						alt=""
-					/>
+					<img class="h-auto max-w-full rounded-lg" src={sdphc} alt="" />
 				</div>
 				<section />
 			</section>
