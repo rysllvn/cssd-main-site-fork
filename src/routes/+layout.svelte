@@ -61,16 +61,12 @@
 				</button>
 				<a class="flex items-center gap-2" href="/">
 					<img class="rounded-lg w-24" src={logo} alt="Challenged Sailors San Diego Logo" />
-					<!-- <div class="hidden md:block text-xl">Challenged Sailors San Diego</div> -->
 					<span
 						class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-3xl"
 						>Challenged Sailors San Diego</span
 					>
 				</a>
 			</svelte:fragment>
-			<a class="w-fit btn variant-filled-primary font-bold text-2xl" href="/go-sailing"
-				>Go Sailing!</a
-			>
 			<svelte:fragment slot="trail">
 				<div class="items-center gap-3 hidden sm:flex">
 					<a href="https://www.facebook.com/challengedsailors/">

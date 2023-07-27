@@ -1,8 +1,16 @@
 <script lang="ts">
+	import { shuffle } from 'lodash';
 	import logo from '$lib/assets/cssd-logo.jpg';
-	import coronado from '$lib/assets/logos/coronado_yacht_club.png';
-	import pointLomaYachtClub from '$lib/assets/logos/point_loma_yacht_club.png';
-	import sdphc from '$lib/assets/logos/sdphc.png';
+	// sponsorship images
+	// https://github.com/vitejs/vite/discussions/12191
+	const images = shuffle(
+		Object.values(
+			import.meta.glob('../lib/assets/logos/*.{png,jpg,jpeg,PNG,JPEG,svg}', {
+				eager: true,
+				as: 'url'
+			})
+		)
+	);
 </script>
 
 <div id="background" class="w-full h-full">
@@ -15,18 +23,18 @@
 			<div class="flex flex-col gap-4 items-center">
 				<h1 class="h1">Welcome!</h1>
 				<hr />
-				<p class="text-3xl italic">
+				<h2 class="h3 italic">
 					<strong>Our Mission</strong> is to provide therapeutic and recreational adaptive sailing opportunities
 					for people with disabilities to enhance their dignity, well-being, and independence.
-				</p>
-				<a class="w-fit btn variant-filled-primary font-bold text-4xl" href="/go-sailing"
+				</h2>
+				<a class="w-fit btn variant-filled-tertiary font-bold text-4xl" href="/go-sailing"
 					>Go Sailing!</a
 				>
 			</div>
 		</header>
 
 		<section class="px-4 flex flex-col lg:flex-row items-center gap-4 justify-between">
-			<div class="hidden md:flex variant-glass-primary p-2">
+			<div class="card card-hover hidden md:flex variant-glass-primary p-2">
 				<iframe
 					style="border-radius: 6px;"
 					width="800"
@@ -39,7 +47,7 @@
 				/>
 			</div>
 
-			<div class="flex md:hidden variant-glass-primary p-2">
+			<div class="card card-hover flex md:hidden variant-glass-primary p-2">
 				<iframe
 					style="border-radius: 6px;"
 					width="400"
@@ -59,28 +67,20 @@
 					Jack Sparrow
 				</blockquote>
 				<div>
-					<a class="w-fit btn variant-filled-secondary" href="/volunteer">Volunteer</a>
-					<a class="w-fit btn variant-filled-tertiary" href="/give">Give</a>
+					<a class="w-fit btn variant-filled-primary" href="/volunteer">Volunteer</a>
+					<a class="w-fit btn variant-filled-secondary" href="/give">Give</a>
 				</div>
 			</section>
 		</section>
 		<section class="p-5 card variant-glass-primary mt-36 flex flex-col items-center">
-			<h2 class="h2 mb-6">Sponsors</h2>
+			<h2 class="h2 mb-6">Proudly Sponsored By</h2>
 			<hr />
 			<section class="grid grid-cols-2 md:grid-cols-3 gap-4">
-				<div>
-					<img class="h-auto max-w-full rounded-lg" src={coronado} alt="" />
-				</div>
-				<div>
-					<img
-						src={pointLomaYachtClub}
-						class="h-auto max-w-full rounded-lg"
-						alt="Point Loma Yacht Club Logo"
-					/>
-				</div>
-				<div>
-					<img class="h-auto max-w-full rounded-lg" src={sdphc} alt="" />
-				</div>
+				{#each images as image}
+					<div class="flex justify-center items-center">
+						<img class="max-h-[12rem] max-w-full rounded-lg" src={image} alt="" />
+					</div>
+				{/each}
 				<section />
 			</section>
 		</section>
