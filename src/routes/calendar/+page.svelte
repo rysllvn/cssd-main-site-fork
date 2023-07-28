@@ -12,9 +12,9 @@
 	}
 </script>
 
-<main class="container mx-auto p-0 lg:p-10">
-	<h1 class="h1 mb-10">Calendar</h1>
-	<div class="hidden lg:flex">
+<main class="container mx-auto p-4 lg:p-10 flex flex-col items-center">
+	<h1 class="h1 mb-5">Calendar</h1>
+	<div class="hidden lg:flex justify-center">
 		{#if largeCalendarLoading}
 			<ProgressRadial value={undefined} />
 		{/if}

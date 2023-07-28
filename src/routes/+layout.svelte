@@ -8,7 +8,7 @@
 	import '../app.postcss';
 
 	// Skeleton Components
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, Modal } from '@skeletonlabs/skeleton';
 
 	// Floating UI
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
@@ -24,6 +24,7 @@
 	import NavigationDrawer from '$lib/components/layout/NavigationDrawer.svelte';
 </script>
 
+<Modal />
 <NavigationDrawer />
 <AppShell slotSidebarLeft="bg-surface-500/5 w-0 md:w-48 md:p-4">
 	<svelte:fragment slot="header"><Header /></svelte:fragment>
