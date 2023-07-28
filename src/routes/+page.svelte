@@ -1,15 +1,12 @@
 <script lang="ts">
-	import { shuffle } from 'lodash';
 	import logo from '$lib/assets/cssd-logo.jpg';
 	// sponsorship images
 	// https://github.com/vitejs/vite/discussions/12191
-	const images = shuffle(
-		Object.values(
-			import.meta.glob('../lib/assets/logos/*.{png,jpg,jpeg,PNG,JPEG,svg}', {
-				eager: true,
-				as: 'url'
-			})
-		)
+	const images = Object.values(
+		import.meta.glob('../lib/assets/logos/*.{png,jpg,jpeg,PNG,JPEG,svg}', {
+			eager: true,
+			as: 'url'
+		})
 	);
 </script>
 
