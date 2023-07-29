@@ -22,7 +22,7 @@
 
 <button class="btn variant-filled w-48 justify-between" use:popup={navigationPopup}>
 	<span class="capitalize">Explore</span>
-	<span>↓</span>
+	<iconify-icon icon="bxs:down-arrow" />
 </button>
 
 <div class="card w-48 shadow-xl py-2" data-popup="navigationPopup">
