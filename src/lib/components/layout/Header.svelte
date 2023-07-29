@@ -26,10 +26,10 @@
 	<svelte:fragment slot="trail">
 		<div class="items-center gap-3 hidden sm:flex">
 			<NavigationPopup />
-			<a href="https://www.facebook.com/challengedsailors/">
+			<a href="https://www.facebook.com/challengedsailors/" class="hover:scale-110">
 				<iconify-icon icon="logos:facebook" class="text-4xl" />
 			</a>
-			<a href="https://www.instagram.com/challengedsailors">
+			<a href="https://www.instagram.com/challengedsailors" class="hover:scale-110">
 				<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
 			</a>
 		</div>

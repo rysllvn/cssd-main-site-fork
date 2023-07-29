@@ -21,11 +21,11 @@
 		are beginners but all have seen a tremendous improvement in their lives through adaptive
 		sailing.
 	</p>
-	<p>
-		Capt. Jack Sparrow - in Pirates of the Caribbean - said, “a sailboat is not just a mast or sails
-		or a rudder; a sailboat is freedom”. For those with a disability that significantly limits their
-		mobility on land, that statement is a reality.
-	</p>
+	<blockquote class="blockquote">
+		“a sailboat is not just a mast or sails or a rudder; a sailboat is freedom”. For those with a
+		disability that significantly limits their mobility on land, that statement is a reality. -
+		<strong>Capt. Jack Sparrow - Pirates of the Caribbean</strong>
+	</blockquote>
 </section>
 <hr />
 
