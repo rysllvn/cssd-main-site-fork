@@ -1,28 +1,12 @@
 <script lang="ts">
-	import { modalStore } from '@skeletonlabs/skeleton';
-
-	// sponsorship images
-	// https://github.com/vitejs/vite/discussions/12191
-	const logos = Object.values(
-		import.meta.glob('../lib/assets/logos/*.{png,jpg,jpeg,PNG,JPEG,svg}', {
-			eager: true,
-			as: 'url'
-		})
-	);
 	// images
-	const images = Object.values(
-		import.meta.glob('../lib/assets/images/*.{png,jpg,jpeg,PNG,JPEG,svg}', {
-			eager: true,
-			as: 'url'
-		})
-	);
-	const images1 = images.slice(0, 3);
-	const images2 = images.slice(3, 6);
-	const images3 = images.slice(6, 9);
-	const images4 = images.slice(9, 12);
-
 	import topPicture from '$lib/assets/images/IMG_3704.jpg';
 	import volunteerPicture from '$lib/assets/images/IMG_3701.jpg';
+
+	// Components
+	import Image from '$lib/components/Image.svelte';
+	import Testimonials from '$lib/components/home/Testimonials.svelte';
+	import SponsorshipCloud from '$lib/components/home/SponsorshipCloud.svelte';
 </script>
 
 <div
@@ -34,7 +18,7 @@
 			id="header"
 			class="mb-10 variant-glass-primary card w-full px-4 py-6 flex flex-col md:flex-row items-center gap-10"
 		>
-			<img class="max-h-[16rem] max-w-full rounded-lg" src={topPicture} alt="" loading="lazy" />
+			<Image classes="max-h-[16rem] max-w-full rounded-lg" src={topPicture} alt="" />
 			<div class="flex flex-col gap-4 items-center">
 				<h1 class="h1">Welcome!</h1>
 				<hr />
@@ -90,148 +74,12 @@
 						<a class="w-fit btn variant-filled-secondary" href="/give">Give</a>
 					</div>
 				</section>
-				<img
-					loading="lazy"
-					src={volunteerPicture}
-					alt=""
-					class="max-h-[14rem] max-w-full rounded-lg"
-				/>
+				<Image src={volunteerPicture} classes="max-h-[14rem] max-w-full" />
 			</div>
 		</section>
 
-		<section class="flex flex-col items-center card variant-glass-primary mt-12 p-4">
-			<h2 class="h2 mb-5">Testimonials</h2>
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-				<div class="grid gap-1">
-					{#each images1 as src}
-						<div>
-							<img
-								class="card card-hover h-auto max-w-full rounded-lg cursor-pointer"
-								{src}
-								alt=""
-								loading="lazy"
-								on:click={() => {
-									modalStore.trigger({
-										type: 'alert',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-								on:keypress={() => {
-									modalStore.trigger({
-										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-							/>
-						</div>
-					{/each}
-				</div>
-				<div class="grid gap-1">
-					{#each images2 as src}
-						<div>
-							<img
-								class="card card-hover h-auto max-w-full rounded-lg cursor-pointer"
-								{src}
-								alt=""
-								loading="lazy"
-								on:click={() => {
-									modalStore.trigger({
-										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-								on:keypress={() => {
-									modalStore.trigger({
-										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-							/>
-						</div>
-					{/each}
-				</div>
-				<div class="grid gap-1">
-					{#each images3 as src}
-						<div>
-							<img
-								class="card card-hover h-auto max-w-full rounded-lg cursor-pointer"
-								{src}
-								alt=""
-								loading="lazy"
-								on:click={() => {
-									modalStore.trigger({
-										type: 'alert',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-								on:keypress={() => {
-									modalStore.trigger({
-										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-							/>
-						</div>
-					{/each}
-				</div>
-				<div class="grid gap-1">
-					{#each images4 as src}
-						<div>
-							<img
-								class="card card-hover h-auto max-w-full rounded-lg cursor-pointer"
-								{src}
-								alt=""
-								loading="lazy"
-								on:click={() => {
-									modalStore.trigger({
-										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-								on:keypress={() => {
-									modalStore.trigger({
-										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
-										buttonTextCancel: 'Close',
-										image: src
-									});
-								}}
-							/>
-						</div>
-					{/each}
-				</div>
-			</div>
-		</section>
-
-		<section class="p-5 card variant-glass-primary mt-24 flex flex-col items-center">
-			<h2 class="h2 mb-6">Proudly Sponsored By</h2>
-			<hr />
-			<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-				{#each logos as logoSrc}
-					<div class="flex justify-center items-center">
-						<img class="max-h-[12rem] max-w-full rounded-lg" src={logoSrc} alt="" />
-					</div>
-				{/each}
-			</div>
-		</section>
+		<Testimonials />
+		<SponsorshipCloud />
 	</div>
 </div>
 

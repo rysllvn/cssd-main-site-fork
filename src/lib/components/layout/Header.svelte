@@ -2,6 +2,7 @@
 	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
 	import logo from '$lib/assets/cssd-logo.jpg';
 	import NavigationPopup from './NavigationPopup.svelte';
+	import ResourcesPopup from './ResourcesPopup.svelte';
 
 	function drawerOpen(): void {
 		drawerStore.open({});
@@ -27,6 +28,9 @@
 		<div class="items-center gap-3 flex">
 			<div class="hidden md:flex">
 				<NavigationPopup />
+			</div>
+			<div class="hidden md:flex">
+				<ResourcesPopup />
 			</div>
 
 			<a href="https://www.facebook.com/challengedsailors/" class="hover:scale-110">
