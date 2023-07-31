@@ -3,7 +3,11 @@
 	import NewMemberForm from '$lib/components/NewMemberForm.svelte';
 </script>
 
-<h1 class="h1">Go Sailing!</h1>
+<h1 class="h1">
+	<iconify-icon icon="twemoji:construction" />
+	Go Sailing!
+	<iconify-icon icon="twemoji:construction" />
+</h1>
 <p class="text-2xl">
 	We love to sail and think you should join us. We go sailing on Friday and Saturday.
 </p>

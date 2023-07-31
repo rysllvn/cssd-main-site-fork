@@ -13,7 +13,11 @@
 </script>
 
 <header class="flex gap-4 flex-col items-center">
-	<h1 class="h1">Volunteer</h1>
+	<h1 class="h1">
+		<iconify-icon icon="twemoji:construction" />
+		Volunteer
+		<iconify-icon icon="twemoji:construction" />
+	</h1>
 	<p>Volunteers are welcome and appreciated.</p>
 </header>
 <section class="opacity-90">

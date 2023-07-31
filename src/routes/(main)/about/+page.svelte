@@ -3,7 +3,11 @@
 	import topPicture from '$lib/assets/images/IMG_3704.jpg';
 </script>
 
-<h1 class="h1">About</h1>
+<h1 class="h1">
+	<iconify-icon icon="twemoji:construction" />
+	About
+	<iconify-icon icon="twemoji:construction" />
+</h1>
 <hr />
 
 <section class="flex flex-col gap-5">

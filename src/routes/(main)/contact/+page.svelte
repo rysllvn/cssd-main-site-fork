@@ -1,5 +1,9 @@
 <header class="flex flex-col justify-center p-4 items-center">
-	<h1 class="h1 mb-4">Contact</h1>
+	<h1 class="h1 mb-4">
+		<iconify-icon icon="twemoji:construction" />
+		Contact
+		<iconify-icon icon="twemoji:construction" />
+	</h1>
 	<p class="">Please feel free to contact us.</p>
 </header>
 <hr />
