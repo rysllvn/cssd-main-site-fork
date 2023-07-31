@@ -1,7 +1,9 @@
-<header class="flex justify-center">
-	<h1 class="h1">Contact</h1>
+<header class="flex flex-col justify-center p-4 items-center">
+	<h1 class="h1 mb-4">Contact</h1>
+	<p class="">Please feel free to contact us.</p>
 </header>
-<ul class="flex flex-col lg:flex-row gap-4 justify-between">
+<hr />
+<ul class="flex flex-col lg:flex-row gap-4 justify-around flex-wrap">
 	<li class="card p-5 bg-primary-100 shadow-sm flex items-center">
 		<a href="emailto:info@challengedsailors.org" class="flex items-center anchor">
 			<iconify-icon icon="ic:baseline-email" class="text-6xl text-primary-800" />
@@ -25,6 +27,18 @@
 				<div>San Diego, CA</div>
 				<div>Dock D, West end of Sunroad Marina parking lot</div>
 			</div>
+		</div>
+	</li>
+
+	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
+		<h2 class="font-bold">Social Media</h2>
+		<div>
+			<a href="https://www.facebook.com/challengedsailors/" class="hover:scale-110">
+				<iconify-icon icon="logos:facebook" class="text-4xl" />
+			</a>
+			<a href="https://www.instagram.com/challengedsailors" class="hover:scale-110">
+				<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
+			</a>
 		</div>
 	</li>
 </ul>

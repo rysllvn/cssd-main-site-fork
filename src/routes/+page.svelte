@@ -43,9 +43,11 @@
 					sailing opportunities for people with disabilities to enhance their dignity, well-being, and
 					independence.
 				</h2>
-				<a class="w-fit btn variant-filled-tertiary font-bold text-4xl" href="/go-sailing"
-					>Go Sailing!</a
-				>
+				<a class="w-fit btn variant-filled-tertiary font-bold text-4xl" href="/go-sailing">
+					<iconify-icon icon="ri:sailboat-line" class="mr-2 text-4xl" />
+					Go Sailing!
+					<iconify-icon icon="ri:sailboat-line" class="mr-2 text-4xl" />
+				</a>
 			</div>
 		</header>
 
@@ -100,7 +102,7 @@
 		<section class="flex flex-col items-center card variant-glass-primary mt-12 p-4">
 			<h2 class="h2 mb-5">Testimonials</h2>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-				<div class="grid gap-0">
+				<div class="grid gap-1">
 					{#each images1 as src}
 						<div>
 							<img
@@ -130,7 +132,7 @@
 						</div>
 					{/each}
 				</div>
-				<div class="grid gap-4">
+				<div class="grid gap-1">
 					{#each images2 as src}
 						<div>
 							<img
@@ -160,7 +162,7 @@
 						</div>
 					{/each}
 				</div>
-				<div class="grid gap-4">
+				<div class="grid gap-1">
 					{#each images3 as src}
 						<div>
 							<img
@@ -190,7 +192,7 @@
 						</div>
 					{/each}
 				</div>
-				<div class="grid gap-4">
+				<div class="grid gap-1">
 					{#each images4 as src}
 						<div>
 							<img

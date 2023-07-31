@@ -20,7 +20,10 @@
 </script>
 
 <button class="btn variant-filled w-48 justify-between" use:popup={navigationPopup}>
-	<span class="capitalize">Explore</span>
+	<div class="flex items-center gap-2">
+		<iconify-icon icon="ph:compass-fill" class="text-xl" />
+		<span class="capitalize">Navigate</span>
+	</div>
 	<iconify-icon icon="bxs:down-arrow" />
 </button>
 
