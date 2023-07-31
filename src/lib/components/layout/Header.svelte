@@ -18,14 +18,17 @@
 		<a class="flex items-center gap-2" href="/">
 			<img class="rounded-lg w-24" src={logo} alt="Challenged Sailors San Diego Logo" />
 			<span
-				class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-3xl"
+				class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-2xl"
 				>Challenged Sailors San Diego</span
 			>
 		</a>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<div class="items-center gap-3 hidden sm:flex">
-			<NavigationPopup />
+		<div class="items-center gap-3 flex">
+			<div class="hidden md:flex">
+				<NavigationPopup />
+			</div>
+
 			<a href="https://www.facebook.com/challengedsailors/" class="hover:scale-110">
 				<iconify-icon icon="logos:facebook" class="text-4xl" />
 			</a>

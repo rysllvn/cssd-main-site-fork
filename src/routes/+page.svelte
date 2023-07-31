@@ -51,7 +51,7 @@
 			</div>
 		</header>
 
-		<section class="px-4 flex flex-col lg:flex-row items-center gap-4 justify-between">
+		<section class="flex flex-col lg:flex-row items-center gap-4 justify-between">
 			<div class="card hidden md:flex variant-glass-primary p-2">
 				<iframe
 					style="border-radius: 6px;"
@@ -113,8 +113,6 @@
 								on:click={() => {
 									modalStore.trigger({
 										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
 										buttonTextCancel: 'Close',
 										image: src
 									});
@@ -173,8 +171,6 @@
 								on:click={() => {
 									modalStore.trigger({
 										type: 'alert',
-										title: 'John Doe',
-										body: 'Lorem ipsum dolor',
 										buttonTextCancel: 'Close',
 										image: src
 									});

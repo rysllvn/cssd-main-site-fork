@@ -3,17 +3,19 @@
 	import topPicture from '$lib/assets/images/IMG_3704.jpg';
 </script>
 
-<h1 class="h1">
-	<iconify-icon icon="twemoji:construction" />
-	About
-	<iconify-icon icon="twemoji:construction" />
-</h1>
+<header class="flex justify-center">
+	<h1 class="h1">
+		<iconify-icon icon="twemoji:construction" />
+		About
+		<iconify-icon icon="twemoji:construction" />
+	</h1>
+</header>
 <hr />
 
 <section class="flex flex-col gap-5">
 	<h2 class="h2">Why adaptive sailing?</h2>
 	<div class="flex flex-col md:flex-row gap-4">
-		<div class="flex flex-col gap-5 w-2/3">
+		<div class="flex flex-col gap-5 md:w-2/3">
 			<p>
 				The US Census Bureau estimated that nearly one in five people in our country have a
 				disability. Many of these people have had to learn to live with restrictions on their

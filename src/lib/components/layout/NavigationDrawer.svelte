@@ -15,7 +15,7 @@
 	}
 </script>
 
-<Drawer>
+<Drawer width="w-64">
 	<nav class="list-nav p-1">
 		<ul class="p-2">
 			<li>
@@ -29,7 +29,7 @@
 		<ul class="p-2">
 			{#each navigation as { href, text, icon }}
 				<li>
-					<a {href}>
+					<a {href} on:click={drawerClose}>
 						<iconify-icon {icon} class="mr-4 text-xl" />
 						{text}
 					</a>

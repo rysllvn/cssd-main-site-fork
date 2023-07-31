@@ -1,13 +1,18 @@
 <script lang="ts">
+	import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
+	import companionImage from '$lib/assets/images/IMG_4296.jpg';
+
 	const roles = [
 		{
 			title: 'Dock support',
-			description: 'Help setup the the boats. Launch and land our sailors.'
+			description: 'Help setup the the boats. Launch and land our sailors.',
+			src: dockSupportImg
 		},
 		{
 			title: 'Companion sailor',
 			description:
-				'Ride along with our sailors to ensure everything goes smoothly and everyone has a great time.'
+				'Ride along with our sailors to ensure everything goes smoothly and everyone has a great time.',
+			src: companionImage
 		}
 	];
 </script>
@@ -20,18 +25,27 @@
 	</h1>
 	<p>Volunteers are welcome and appreciated.</p>
 </header>
+<hr />
 <section class="opacity-90">
-	<h2 class="h2 mb-4">There are a variety of ways to help us out.</h2>
+	<h2 class="h2 mb-8">There are a variety of ways to help us out.</h2>
 	<ul class="flex flex-wrap gap-2">
-		{#each roles as { title, description }}
-			<li class="card bg-primary-200 shadow-sm lg:w-1/3 p-2">
-				<h3 class="h3 mb-1">
-					{title}
-				</h3>
-				<hr />
-				<p>
-					{description}
-				</p>
+		{#each roles as { title, description, src }}
+			<li
+				class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl bg-primary-100"
+			>
+				<img
+					class="object-cover w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
+					{src}
+					alt=""
+				/>
+				<div class="flex flex-col justify-between p-4 leading-normal">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight">
+						{title}
+					</h5>
+					<p class="mb-3 font-normal">
+						{description}
+					</p>
+				</div>
 			</li>
 		{/each}
 	</ul>
