@@ -7,6 +7,7 @@
 	import Image from '$lib/components/Image.svelte';
 	import Testimonials from '$lib/components/home/Testimonials.svelte';
 	import SponsorshipCloud from '$lib/components/home/SponsorshipCloud.svelte';
+	import ButtonApplication from '$lib/components/ButtonApplication.svelte';
 </script>
 
 <div
@@ -27,11 +28,7 @@
 					sailing opportunities for people with disabilities to enhance their dignity, well-being, and
 					independence.
 				</h2>
-				<a class="w-fit btn variant-filled-tertiary font-bold text-4xl" href="/go-sailing">
-					<iconify-icon icon="ri:sailboat-line" class="mr-2 text-4xl" />
-					Go Sailing!
-					<iconify-icon icon="ri:sailboat-line" class="mr-2 text-4xl" />
-				</a>
+				<ButtonApplication large={true} />
 			</div>
 		</header>
 

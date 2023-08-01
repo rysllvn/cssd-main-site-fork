@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { navigation } from '$lib/navigation';
-	import { popup } from '@skeletonlabs/skeleton';
-	import type { PopupSettings } from '@skeletonlabs/skeleton';
+	import { type PopupSettings, popup } from '@skeletonlabs/skeleton';
+
+	import ButtonApplication from '../ButtonApplication.svelte';
 
 	const navigationPopup: PopupSettings = {
-		event: 'focus-click',
+		event: 'click',
 		target: 'navigationPopup',
 		placement: 'bottom'
 	};
@@ -20,11 +21,8 @@
 <div class="card w-48 shadow-xl" data-popup="navigationPopup">
 	<nav class="list-nav p-1">
 		<ul class="p-2">
-			<li>
-				<a class="bg-primary-800 text-white" href="/go-sailing">
-					<iconify-icon icon="ri:sailboat-fill" class="mr-2 text-xl" />
-					Go Sailing!
-				</a>
+			<li class="flex justify-center">
+				<ButtonApplication />
 			</li>
 		</ul>
 		<hr />

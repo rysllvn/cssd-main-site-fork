@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import { navigation, resources } from '$lib/navigation';
+	import ButtonApplication from '../ButtonApplication.svelte';
 	function drawerClose(): void {
 		drawerStore.close();
 	}
@@ -10,10 +11,7 @@
 	<nav class="list-nav p-1">
 		<ul class="p-2">
 			<li>
-				<a class="bg-primary-800 text-white" href="/go-sailing">
-					<iconify-icon icon="ri:sailboat-fill" class="mr-2 text-xl" />
-					Go Sailing!
-				</a>
+				<ButtonApplication />
 			</li>
 		</ul>
 		<hr />

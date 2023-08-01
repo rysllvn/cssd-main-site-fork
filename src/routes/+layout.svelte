@@ -8,7 +8,7 @@
 	import '../app.postcss';
 
 	// Skeleton Components
-	import { AppShell, Modal } from '@skeletonlabs/skeleton';
+	import { AppShell, Modal, type ModalComponent } from '@skeletonlabs/skeleton';
 
 	// Floating UI
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
@@ -22,9 +22,18 @@
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import NavigationDrawer from '$lib/components/layout/NavigationDrawer.svelte';
+
+	// Custom modals
+	import NewMemberForm from '$lib/components/NewMemberForm.svelte';
+
+	const modalComponentRegistry: Record<string, ModalComponent> = {
+		newMemberForm: {
+			ref: NewMemberForm
+		}
+	};
 </script>
 
-<Modal />
+<Modal components={modalComponentRegistry} />
 <NavigationDrawer />
 <AppShell slotSidebarLeft="bg-surface-500/5 w-0 md:w-48 md:p-4">
 	<svelte:fragment slot="header"><Header /></svelte:fragment>

@@ -3,7 +3,7 @@
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
 
 	const resourcesPopup: PopupSettings = {
-		event: 'focus-click',
+		event: 'click',
 		target: 'resourcesPopup',
 		placement: 'bottom'
 	};
