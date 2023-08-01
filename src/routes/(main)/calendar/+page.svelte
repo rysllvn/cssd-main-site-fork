@@ -16,7 +16,7 @@
 	<h1 class="h1 mb-5">Calendar</h1>
 </header>
 <hr />
-<div class="hidden md:flex justify-center flex-col items-center w-fit shadow-md self-center">
+<div class="hidden md:flex justify-center flex-col items-center w-fit shadow self-center">
 	{#if largeCalendarLoading}
 		<ProgressRadial value={undefined} />
 	{/if}
@@ -31,7 +31,7 @@
 		scrolling="no"
 	/>
 </div>
-<div class="block md:hidden self-center shadow-md">
+<div class="block md:hidden self-center shadow">
 	{#if smallCalendarLoading}
 		<ProgressRadial value={undefined} />
 	{/if}

@@ -7,7 +7,7 @@
 	<p class="">Please feel free to contact us.</p>
 </header>
 <hr />
-<ul class="flex flex-col lg:flex-row gap-4 justify-around flex-wrap">
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
 	<li class="card p-5 bg-primary-100 shadow-sm flex items-center">
 		<a href="emailto:info@challengedsailors.org" class="flex items-center anchor">
 			<iconify-icon icon="ic:baseline-email" class="text-6xl text-primary-800" />
@@ -36,13 +36,35 @@
 
 	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
 		<h2 class="font-bold">Social Media</h2>
-		<div>
-			<a href="https://www.facebook.com/challengedsailors/" class="hover:scale-110">
-				<iconify-icon icon="logos:facebook" class="text-4xl" />
+		<div class="flex justify-center gap-8 items-center w-full">
+			<a href="https://www.facebook.com/challengedsailors/">
+				<iconify-icon icon="logos:facebook" class="text-4xl hover:scale-110" />
 			</a>
-			<a href="https://www.instagram.com/challengedsailors" class="hover:scale-110">
-				<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
+			<a href="https://www.instagram.com/challengedsailors">
+				<iconify-icon icon="skill-icons:instagram" class="text-4xl hover:scale-110" />
+			</a>
+			<a href="https://www.youtube.com/@challengedsailorssandiego">
+				<iconify-icon icon="logos:youtube" class="text-2xl hover:scale-110" />
+			</a>
+			<a href="https://twitter.com/challsailSD">
+				<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" />
 			</a>
 		</div>
+	</li>
+
+	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm">
+		<iconify-icon icon="ic:round-phone" class="text-6xl" />
+		<div>
+			<div class="font-bold">Telephone</div>
+			<p>+1-760-690-6594</p>
+		</div>
+	</li>
+	<li class="card bg-primary-100 w-fit p-5">
+		<div class="font-bold">Finding Us</div>
+		<p>
+			Check out the
+			<a href="/location" class="anchor">Getting Here page</a> for detailed information about our sailing
+			location
+		</p>
 	</li>
 </ul>

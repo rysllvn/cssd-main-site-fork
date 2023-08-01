@@ -1,6 +1,16 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import topPicture from '$lib/assets/images/IMG_3704.jpg';
+
+	const boardMembers = [
+		{ name: 'Peter Phillips', title: 'President' },
+		{ name: 'Terry Green', title: 'Treasurer' },
+		{ name: 'Sam Graber', title: 'Secretary' },
+		{ name: 'Ryan Craft', title: 'Director' },
+		{ name: 'Eric Matus', title: 'Director' },
+		{ name: 'Sue Taetzsch', title: 'Director' },
+		{ name: 'Dan Willan', title: 'Director' }
+	];
 </script>
 
 <header class="flex justify-center">
@@ -77,16 +87,17 @@
 	</div>
 </div>
 <hr />
-<section>
-	<h2 class="h2">Management</h2>
-	<ul class="flex flex-col gap-5">
-		<li class="flex items-center gap-3">
-			<Avatar />
-			<h3 class="h3">Peter Phillips - President</h3>
-		</li>
-		<li class="flex items-center gap-3">
-			<Avatar />
-			<h3 class="h3">Sam Graber - Marketing and Communications</h3>
-		</li>
+<section class="flex flex-col">
+	<h2 class="h2 self-center mb-4">Management</h2>
+	<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		{#each boardMembers as { name, title }}
+			<li class="flex items-center gap-3 card bg-secondary-100 p-4 shadow">
+				<Avatar />
+				<div>
+					<h3 class="h3">{name}</h3>
+					<h4>{title}</h4>
+				</div>
+			</li>
+		{/each}
 	</ul>
 </section>

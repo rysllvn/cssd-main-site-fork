@@ -9,7 +9,7 @@
 	}
 </script>
 
-<AppBar class="shadow">
+<AppBar class="shadow-md">
 	<svelte:fragment slot="lead">
 		<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
 			<span>

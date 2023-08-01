@@ -13,6 +13,21 @@
 			description:
 				'Ride along with our sailors to ensure everything goes smoothly and everyone has a great time.',
 			src: companionImage
+		},
+		{
+			title: 'ASL Interpreters',
+			description: '',
+			src: companionImage
+		},
+		{
+			title: 'Back Office Support',
+			description: '',
+			src: companionImage
+		},
+		{
+			title: 'Fund Raising and Public Relations',
+			description: '',
+			src: companionImage
 		}
 	];
 </script>
@@ -28,7 +43,7 @@
 <hr />
 <section class="opacity-90">
 	<h2 class="h2 mb-8">There are a variety of ways to help us out.</h2>
-	<ul class="flex flex-wrap gap-2">
+	<ul class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4">
 		{#each roles as { title, description, src }}
 			<li
 				class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl bg-primary-100"

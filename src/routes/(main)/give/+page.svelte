@@ -1,6 +1,6 @@
-<h1 class="h1">
+<h1 class="h1 self-center">
 	<iconify-icon icon="twemoji:construction" />
 	Give
 	<iconify-icon icon="twemoji:construction" />
 </h1>
-<p>Donations are welcome and appreciated</p>
+<p>Bloomerang itegration</p>
