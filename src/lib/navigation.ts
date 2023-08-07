@@ -7,4 +7,25 @@ export const navigation = [
 	{ href: '/contact', text: 'Contact', icon: 'material-symbols:contact-mail-outline' },
 	{ href: '/faq', text: 'FAQ', icon: 'wpf:faq' }
 ];
-export const resources = [{ href: '/location', text: 'Getting Here', icon: 'tabler:car' }];
+export const resources = [
+	{
+		href: '/location',
+		text: 'Getting Here',
+		icon: 'tabler:car'
+	},
+	{
+		href: '/conditions',
+		text: 'Conditions',
+		icon: 'gis:weather-map'
+	},
+	{
+		href: '/preparation',
+		text: 'Preparation',
+		icon: 'solar:backpack-linear'
+	},
+	{
+		href: '/learning',
+		text: 'Learning',
+		icon: 'ion:book-outline'
+	}
+];
