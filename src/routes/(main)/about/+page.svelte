@@ -93,6 +93,7 @@
 		</section>
 	</div>
 </div>
+
 <hr />
 <section class="flex flex-col">
 	<h2 class="h2 self-center mb-4">Management</h2>
