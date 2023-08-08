@@ -18,8 +18,8 @@
 		id="header"
 		class="mb-10 variant-glass-primary card w-full px-4 py-6 flex flex-col md:flex-row items-center gap-10"
 	>
-		<div class="flex flex-col gap-4 items-center">
-			<h1 class="h1">Challenged Sailors San Diego</h1>
+		<div class="flex flex-col gap-4 items-center text-white">
+			<h1 class="h1">Welcome!</h1>
 			<hr />
 			<h2 class="h3 italic">
 				We provide therapeutic and recreational adaptive sailing opportunities for people with
