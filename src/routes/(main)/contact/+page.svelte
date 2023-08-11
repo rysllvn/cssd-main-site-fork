@@ -1,10 +1,5 @@
 <header class="flex flex-col justify-center p-4 items-center">
-	<h1 class="h1 mb-4">
-		<iconify-icon icon="twemoji:construction" />
-		Contact
-		<iconify-icon icon="twemoji:construction" />
-	</h1>
-	<p class="">Please feel free to contact us.</p>
+	<h1 class="h1 mb-4">Contact</h1>
 </header>
 <hr />
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
@@ -22,7 +17,7 @@
 		</div>
 	</li>
 
-	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm">
+	<li class="card p-5 bg-primary-100 flex gap-8 items-center shadow-sm">
 		<iconify-icon icon="twemoji:sailboat" class="text-6xl" />
 		<div class="flex flex-col">
 			<div class="font-bold">Sailing Address</div>
@@ -34,6 +29,21 @@
 		</div>
 	</li>
 
+	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm">
+		<iconify-icon icon="ic:round-phone" class="text-6xl" />
+		<div>
+			<div class="font-bold">Telephone</div>
+			<p>+1-760-690-6594</p>
+		</div>
+	</li>
+	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm">
+		<iconify-icon icon="tabler:car" class="text-6xl" />
+		<p>
+			See our
+			<a href="/location" class="anchor">Getting Here page</a> for information about transportation options.
+		</p>
+	</li>
+
 	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
 		<h2 class="font-bold">Social Media</h2>
 		<div class="flex justify-center gap-8 items-center w-full">
@@ -43,28 +53,9 @@
 			<a href="https://www.instagram.com/challengedsailors">
 				<iconify-icon icon="skill-icons:instagram" class="text-4xl hover:scale-110" />
 			</a>
-			<a href="https://www.youtube.com/@challengedsailorssandiego">
-				<iconify-icon icon="logos:youtube" class="text-2xl hover:scale-110" />
-			</a>
 			<a href="https://twitter.com/challsailSD">
 				<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" />
 			</a>
 		</div>
-	</li>
-
-	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm">
-		<iconify-icon icon="ic:round-phone" class="text-6xl" />
-		<div>
-			<div class="font-bold">Telephone</div>
-			<p>+1-760-690-6594</p>
-		</div>
-	</li>
-	<li class="card bg-primary-100 w-fit p-5">
-		<div class="font-bold">Finding Us</div>
-		<p>
-			Check out the
-			<a href="/location" class="anchor">Getting Here page</a> for detailed information about our sailing
-			location
-		</p>
 	</li>
 </ul>

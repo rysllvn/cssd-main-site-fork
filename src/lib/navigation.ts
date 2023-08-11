@@ -1,31 +1,25 @@
 export const navigation = [
-	{ href: '/', text: 'Home', icon: 'iconamoon:home-bold' },
 	{ href: '/calendar', text: 'Calendar', icon: 'mdi:calendar' },
 	{ href: '/volunteer', text: 'Volunteer', icon: 'ph:hand' },
 	{ href: '/give', text: 'Give', icon: 'material-symbols:volunteer-activism' },
 	{ href: '/about', text: 'About', icon: 'mdi:about' },
-	{ href: '/contact', text: 'Contact', icon: 'material-symbols:contact-mail-outline' },
-	{ href: '/faq', text: 'FAQ', icon: 'wpf:faq' }
+	{ href: '/contact', text: 'Contact', icon: 'material-symbols:contact-mail-outline' }
 ];
 export const resources = [
+	{ href: '/faq', text: 'FAQ', icon: 'wpf:faq' },
 	{
 		href: '/location',
 		text: 'Getting Here',
 		icon: 'tabler:car'
 	},
 	{
-		href: '/conditions',
-		text: 'Conditions',
-		icon: 'gis:weather-map'
-	},
-	{
 		href: '/preparation',
-		text: 'Preparation',
-		icon: 'solar:backpack-linear'
+		text: 'Manuals',
+		icon: 'ion:book-outline'
 	},
 	{
-		href: '/learning',
-		text: 'Learning',
-		icon: 'ion:book-outline'
+		href: '/forms',
+		text: 'Forms',
+		icon: 'mdi:form-outline'
 	}
 ];

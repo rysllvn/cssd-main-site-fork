@@ -14,11 +14,10 @@
 </script>
 
 <button
-	class={`btn ${
+	class={`btn font-bold ${
 		large ? 'btn variant-filled-tertiary w-fit text-4xl' : 'btn variant-filled-primary w-full'
 	}`}
 	on:click={newMemberForm}
 >
-	<iconify-icon icon="ri:sailboat-fill" class={large ? 'mr-3 text-4xl' : 'mr-2 text-xl'} />
 	Go Sailing!
 </button>

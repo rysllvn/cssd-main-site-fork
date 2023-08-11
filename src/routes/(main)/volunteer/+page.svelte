@@ -2,47 +2,38 @@
 	import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
 	import companionImage from '$lib/assets/images/IMG_4296.jpg';
 
+	const headingParagraphs = [
+		'Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of volunteers to help with companion sailing, dock support and coordination. It’s a true team effort.',
+		'Become a volunteer today and make a lifechanging impact on someone who otherwise wouldn’t have the chance to belong.',
+		'On the water we’re all sailors, no more difference.'
+	];
+
 	const roles = [
-		{
-			title: 'Dock support',
-			description: 'Help setup the the boats. Launch and land our sailors.',
-			src: dockSupportImg
-		},
 		{
 			title: 'Companion sailor',
 			description:
-				'Ride along with our sailors to ensure everything goes smoothly and everyone has a great time.',
+				'Seeking experienced sailors who can ride along with our disabled sailors to make sure everyone has a smooth ride and enjoyable time on the water.',
 			src: companionImage
 		},
 		{
-			title: 'ASL Interpreters',
-			description: '',
-			src: companionImage
-		},
-		{
-			title: 'Back Office Support',
-			description: '',
-			src: companionImage
-		},
-		{
-			title: 'Fund Raising and Public Relations',
-			description: '',
-			src: companionImage
+			title: 'Dock support',
+			description:
+				'seeking abled bodied individuals to help transport sailors to the docks, prepare the boats for launch and land our sailors safely when they return.',
+			src: dockSupportImg
 		}
 	];
 </script>
 
 <header class="flex gap-4 flex-col items-center">
-	<h1 class="h1">
-		<iconify-icon icon="twemoji:construction" />
-		Volunteer
-		<iconify-icon icon="twemoji:construction" />
-	</h1>
-	<p>Volunteers are welcome and appreciated.</p>
+	<h1 class="h1">Volunteer</h1>
+	{#each headingParagraphs as paragraph}
+		<p>
+			{paragraph}
+		</p>
+	{/each}
 </header>
 <hr />
 <section class="opacity-90">
-	<h2 class="h2 mb-8">There are a variety of ways to help us out.</h2>
 	<ul class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4">
 		{#each roles as { title, description, src }}
 			<li

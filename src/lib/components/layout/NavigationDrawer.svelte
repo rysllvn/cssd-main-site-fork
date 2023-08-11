@@ -16,6 +16,12 @@
 		</ul>
 		<hr />
 		<ul class="p-2">
+			<li>
+				<a href="/">
+					<iconify-icon icon="iconamoon:home-bold" class="mr-4 text-xl" />
+					Home
+				</a>
+			</li>
 			{#each navigation as { href, text, icon }}
 				<li>
 					<a {href} on:click={drawerClose}>

@@ -1,15 +1,21 @@
 <script lang="ts">
 	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
-	import logo from '$lib/assets/cssd-logo.jpg';
-	import NavigationPopup from './NavigationPopup.svelte';
+	import logo from '$lib/assets/CSSD_EEM_Logo2.jpg';
 	import ResourcesPopup from './ResourcesPopup.svelte';
+	import NavigationBar from './NavigationBar.svelte';
+	import NavigationPopup from './NavigationPopup.svelte';
 
 	function drawerOpen(): void {
 		drawerStore.open({});
 	}
 </script>
 
-<AppBar class="shadow-md">
+<AppBar
+	class="shadow-md"
+	gridColumns="grid-cols-3"
+	slotDefault="place-self-center"
+	slotTrail="place-content-end"
+>
 	<svelte:fragment slot="lead">
 		<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
 			<span>
@@ -17,28 +23,19 @@
 			</span>
 		</button>
 		<a class="flex items-center gap-2" href="/">
-			<img class="rounded-lg w-24" src={logo} alt="Challenged Sailors San Diego Logo" />
+			<img class="hidden md:block rounded-lg w-12" src={logo} alt="Challenged Sailors" />
 			<span
 				class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-2xl"
 				>Challenged Sailors San Diego</span
 			>
 		</a>
 	</svelte:fragment>
+
 	<svelte:fragment slot="trail">
 		<div class="items-center gap-3 flex">
-			<div class="hidden md:flex">
-				<NavigationPopup />
-			</div>
-			<div class="hidden md:flex">
-				<ResourcesPopup />
-			</div>
-
-			<a href="https://www.facebook.com/challengedsailors/" class="hover:scale-110">
-				<iconify-icon icon="logos:facebook" class="text-4xl" />
-			</a>
-			<a href="https://www.instagram.com/challengedsailors" class="hover:scale-110">
-				<iconify-icon icon="skill-icons:instagram" class="text-4xl" />
-			</a>
+			<NavigationBar />
+			<NavigationPopup />
+			<ResourcesPopup />
 		</div>
 	</svelte:fragment>
 </AppBar>
