@@ -2,20 +2,26 @@
 	import { ProgressRadial } from '@skeletonlabs/skeleton';
 
 	let largeCalendarLoading = true;
+	let mediumCalendarLoading = true;
 	let smallCalendarLoading = true;
 
 	function hideLargeSpinner() {
 		largeCalendarLoading = false;
+	}
+	function hideMediumSpinner() {
+		mediumCalendarLoading = false;
 	}
 	function hideSmallSpinner() {
 		smallCalendarLoading = false;
 	}
 </script>
 
-<header class="flex justify-center">
-	<h1 class="h1 mb-5">Calendar</h1>
+<header>
+	<h1 class="h1">Calendar</h1>
 </header>
+
 <hr />
+
 <div class="hidden lg:flex justify-center flex-col items-center w-fit shadow self-center">
 	{#if largeCalendarLoading}
 		<ProgressRadial value={undefined} />
@@ -33,11 +39,11 @@
 	/>
 </div>
 <div class="hidden md:flex lg:hidden justify-center flex-col items-center w-fit shadow self-center">
-	{#if largeCalendarLoading}
+	{#if mediumCalendarLoading}
 		<ProgressRadial value={undefined} />
 	{/if}
 	<iframe
-		on:load={hideLargeSpinner}
+		on:load={hideMediumSpinner}
 		title="Calendar"
 		src="https://www.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23FFFFFF&src=scheduler%40challengedsailors.org&color=%232952A3&ctz=America%2FLos_Angeles"
 		style="border: 0; border-radius: 6px;"

@@ -14,7 +14,7 @@
 </script>
 
 <button
-	class={`btn font-bold ${
+	class={`shadow btn font-bold ${
 		large ? 'btn variant-filled-tertiary w-fit text-4xl' : 'btn variant-filled-primary w-full'
 	}`}
 	on:click={newMemberForm}

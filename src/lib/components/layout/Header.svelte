@@ -24,10 +24,7 @@
 		</button>
 		<a class="flex items-center gap-2" href="/">
 			<img class="hidden md:block rounded-lg w-12" src={logo} alt="Challenged Sailors" />
-			<span
-				class=" hidden md:block bg-gradient-to-br from-blue-900 to-cyan-700 bg-clip-text text-transparent box-decoration-clone text-2xl"
-				>Challenged Sailors San Diego</span
-			>
+			<span class=" hidden md:block text-2xl">Challenged Sailors San Diego</span>
 		</a>
 	</svelte:fragment>
 
