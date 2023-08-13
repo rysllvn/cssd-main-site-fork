@@ -3,6 +3,7 @@
 
 	import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
 	import companionImage from '$lib/assets/images/IMG_4296.jpg';
+	import Image from '$lib/components/Image.svelte';
 
 	const roles = [
 		{
@@ -25,19 +26,23 @@
 	<hr />
 
 	<div class="flex flex-col items-start">
-		<p class="prose-lg">
-			Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of
-			volunteers to help with companion sailing, dock support and coordination. It's a true team
-			effort.
-		</p>
-		<div class="self-center">
-			<BeginJourney />
+		<div class="flex flex-col md:flex-row gap-2">
+			<div class="flex flex-col gap-4">
+				<p class="prose-lg">
+					Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of
+					volunteers to help with companion sailing, dock support and coordination. It's a true team
+					effort.
+				</p>
+				<BeginJourney />
+				<p class="prose-lg">
+					Become a volunteer today and make a life changing impact on someone who otherwise wouldn't
+					have the chance to belong.
+				</p>
+				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
+			</div>
+			<Image src={dockSupportImg} classes="max-w-md" />
 		</div>
-		<p class="prose-lg">
-			Become a volunteer today and make a life changing impact on someone who otherwise wouldn't
-			have the chance to belong.
-		</p>
-		<p class="prose-lg">On the water we're all sailors, no more difference.</p>
+		<div class="self-center" />
 	</div>
 </header>
 

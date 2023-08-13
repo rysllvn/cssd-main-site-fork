@@ -12,7 +12,7 @@
 </header>
 <hr />
 
-<ul class="flex flex-col gap-10 max-w-prose">
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
 	{#each questionAndAnswers as { question, answer }}
 		<li class="flex flex-col gap-2">
 			<p class="prose-lg text-black card p-2 bg-surface-300 w-fit shadow">
