@@ -3,7 +3,7 @@
 
 	import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
 	import companionImage from '$lib/assets/images/IMG_4296.jpg';
-	import Image from '$lib/components/Image.svelte';
+	import groupPicture from '$lib/assets/images/group_photo.jpg';
 
 	const roles = [
 		{
@@ -25,8 +25,8 @@
 	<h1 class="h1 mb-7">Volunteer</h1>
 	<hr />
 
-	<div class="flex flex-col items-start">
-		<div class="flex flex-col md:flex-row gap-2">
+	<div class="flex flex-col md:flex-row items-start pt-2">
+		<div class="flex flex-col md:flex-row gap-2 lg:w-1/2">
 			<div class="flex flex-col gap-4">
 				<p class="prose-lg">
 					Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of
@@ -40,9 +40,8 @@
 				</p>
 				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
 			</div>
-			<Image src={dockSupportImg} classes="max-w-md" />
 		</div>
-		<div class="self-center" />
+		<img src={groupPicture} alt="the group at the docks" class="lg:w-1/2 rounded" />
 	</div>
 </header>
 

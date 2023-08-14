@@ -11,19 +11,19 @@
 </script>
 
 <AppBar
-	class="shadow-md"
+	class="shadow-md py-1"
 	gridColumns="grid-cols-3"
 	slotDefault="place-self-center"
 	slotTrail="place-content-end"
 >
 	<svelte:fragment slot="lead">
-		<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
+		<button class="md:hidden btn btn-sm" on:click={drawerOpen}>
 			<span>
 				<iconify-icon icon="ci:hamburger-lg" class="text-4xl" />
 			</span>
 		</button>
 		<a class="flex items-center gap-2" href="/">
-			<img class="hidden md:block rounded-lg w-12" src={logo} alt="Challenged Sailors" />
+			<img class="rounded-lg w-16" src={logo} alt="Challenged Sailors" />
 			<span class=" hidden md:block text-2xl">Challenged Sailors San Diego</span>
 		</a>
 	</svelte:fragment>
