@@ -6,7 +6,7 @@
 	// Components
 	import Image from '$lib/components/Image.svelte';
 	import Testimonials from '$lib/components/home/Testimonials.svelte';
-	import SponsorshipCloud from '$lib/components/home/SponsorshipCloud.svelte';
+	import SponsorshipCloud from '$lib/components/SponsorshipCloud.svelte';
 	import ButtonApplication from '$lib/components/ButtonApplication.svelte';
 </script>
 
