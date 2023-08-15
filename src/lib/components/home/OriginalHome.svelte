@@ -79,11 +79,3 @@
 		<SponsorshipCloud />
 	</div>
 </div>
-
-<style>
-	#background {
-		background-image: url($lib/assets/images/home_background.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-</style>
