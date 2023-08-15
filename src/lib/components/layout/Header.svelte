@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
-	import logo from '$lib/assets/CSSD_EEM_Logo2.jpg';
+
+	// custom components
 	import ResourcesPopup from './ResourcesPopup.svelte';
 	import NavigationBar from './NavigationBar.svelte';
 	import NavigationPopup from './NavigationPopup.svelte';
+
+	// assets
+	import logo from '$lib/assets/images/logos/CSSD_EEM_Logo2.jpg';
 
 	function drawerOpen(): void {
 		drawerStore.open({});

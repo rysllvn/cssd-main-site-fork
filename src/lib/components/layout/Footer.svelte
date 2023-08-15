@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/assets/cssd-logo.jpg';
+	import logo from '$lib/assets/images/logos/CSSD_EEM_Logo2.jpg';
 </script>
 
 <footer class="bg-surface-50">

@@ -9,6 +9,7 @@ import portOfSanDiego from './port_of_san_diego.svg';
 import rotarySDDowntown from './rotary_sd_downtown_breakfast.png';
 import sdphc from './sdphc.png';
 import sunroad from './sunroad.svg';
+import somerset from './somerset_sail.png';
 
 export const sponsors = [
 	{
@@ -65,5 +66,10 @@ export const sponsors = [
 		src: sunroad,
 		alt: 'Safe Harbor Sunroad Logo',
 		href: 'https://shmarinas.com/locations/safe-harbor-sunroad/'
+	},
+	{
+		src: somerset,
+		alt: 'Somerset Sails',
+		href: 'https://somersetsails.com/'
 	}
 ];

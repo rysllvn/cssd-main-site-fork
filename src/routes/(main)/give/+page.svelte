@@ -35,7 +35,7 @@
 <hr />
 
 <section class="flex flex-col lg:flex-row gap-8">
-	<div class="lg:w-2/5 flex flex-col items-center justify-around">
+	<div class="lg:w-2/5 flex flex-col items-center">
 		<button class="btn text-2xl variant-filled-secondary w-fit shadow-sm mb-8">Donate Now!</button>
 		<ul class="flex flex-col items-center justify-center gap-2">
 			{#each titles as title}

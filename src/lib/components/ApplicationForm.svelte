@@ -7,7 +7,7 @@
 >
 	<h2 class="h2 self-center">Sailing Application</h2>
 	<div class="mt-10 grid grid-cols-1 gap-x-2 gap-y-2 sm:grid-cols-6 mb-4">
-		<div class="sm:col-span-3">
+		<div class="col-span-6 sm:col-span-3">
 			<label for="first-name" class="label">First name</label>
 			<div class="mt-2">
 				<input
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 
-		<div class="sm:col-span-3">
+		<div class="col-span-6 sm:col-span-3">
 			<label for="last-name" class="label">Last name</label>
 			<div class="mt-2">
 				<input
@@ -33,14 +33,14 @@
 			</div>
 		</div>
 
-		<div class="sm:col-span-4">
+		<div class="col-span-6 sm:col-span-4">
 			<label for="email" class="label">Email address</label>
 			<div class="mt-2">
 				<input id="email" name="email" type="email" autocomplete="email" class="input" />
 			</div>
 		</div>
 
-		<div class="sm:col-span-2">
+		<div class="col-span-6 sm:col-span-2">
 			<label for="age" class="label">Age</label>
 			<div class="mt-2">
 				<input type="number" name="age" id="age" class="input" />

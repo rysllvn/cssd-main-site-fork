@@ -63,7 +63,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
 	<img class="grid" src={groupPhoto} alt="Sailors and Volunteers" />
-	<div class="grid gap-1">
+	<div class="flex flex-col gap-10">
 		<section class="mb-4">
 			<h2 class="h2 mb-4">Mission</h2>
 			<p class="prose-base">
@@ -85,7 +85,7 @@
 
 <hr />
 <section class="flex flex-col">
-	<h2 class="h2 self-center mb-4">Management</h2>
+	<h2 class="h2 mb-4">Management</h2>
 	<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		{#each boardMembers as { name, title, src, bio }}
 			<li class="flex items-center gap-3 card bg-primary-100 p-4 shadow">

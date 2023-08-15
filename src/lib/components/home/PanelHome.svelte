@@ -18,7 +18,7 @@
 			Winner of the US Sailing 2022 Robie Pierce Award for excellence in Adaptive Sailing.
 		</p>
 		<p class="h2 flex items-center gap-2">
-			<a href="/application" class="btn variant-filled-primary w-fit text-4xl"> Click Here </a>
+			<a href="/application" class="text-white btn bg-primary-700 w-fit text-4xl"> Click Here </a>
 			to begin your journey!
 		</p>
 	</header>
