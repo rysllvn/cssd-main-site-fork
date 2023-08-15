@@ -4,6 +4,7 @@
 	import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
 	import companionImage from '$lib/assets/images/IMG_4296.jpg';
 	import groupPicture from '$lib/assets/images/group_photo.jpg';
+	import twoBoats from '$lib/assets/images/two_boats.jpg';
 
 	const roles = [
 		{
@@ -41,32 +42,28 @@
 				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
 			</div>
 		</div>
-		<img src={groupPicture} alt="the group at the docks" class="lg:w-1/2 rounded" />
+		<img src={twoBoats} alt="the group at the docks" class="lg:w-1/2 rounded" />
 	</div>
 </header>
 
 <hr />
 
-<section class="opacity-90">
-	<ul class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2">
-		{#each roles as { title, description, src }}
-			<li
-				class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl bg-primary-100"
-			>
-				<img
-					class="object-cover w-full rounded-t-lg h-96 md:h-full md:w-64 md:rounded-none md:rounded-l-lg"
-					{src}
-					alt=""
-				/>
-				<div class="flex flex-col justify-between p-4 leading-normal">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight">
-						{title}
-					</h5>
-					<p class="mb-3 font-normal prose-lg">
-						{description}
-					</p>
-				</div>
-			</li>
-		{/each}
-	</ul>
-</section>
+<ul class="flex flex-col lg:flex-row gap-4 justify-around">
+	{#each roles as { title, description, src }}
+		<li class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl bg-primary-100">
+			<img
+				class="object-cover w-full rounded-t-lg h-96 md:h-full md:w-80 md:rounded-none md:rounded-l-lg"
+				{src}
+				alt=""
+			/>
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight">
+					{title}
+				</h5>
+				<p class="mb-3 font-normal prose-lg">
+					{description}
+				</p>
+			</div>
+		</li>
+	{/each}
+</ul>

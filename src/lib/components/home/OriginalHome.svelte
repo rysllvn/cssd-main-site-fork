@@ -1,7 +1,7 @@
 <script lang="ts">
 	// images
 	import topPicture from '$lib/assets/images/IMG_3704.jpg';
-	import volunteerPicture from '$lib/assets/images/IMG_3701.jpg';
+	import volunteerPicture from '$lib/assets/images/group_photo.jpg';
 
 	// Components
 	import Image from '$lib/components/Image.svelte';

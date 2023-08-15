@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Hero from './Hero.svelte';
 	import YoutubeEmbed from './YoutubeEmbed.svelte';
-	import groupPicture from '$lib/assets/images/group_photo.jpg';
+	import groupPicture from '$lib/assets/images/two_boats.jpg';
 </script>
 
 <Hero src={groupPicture}>

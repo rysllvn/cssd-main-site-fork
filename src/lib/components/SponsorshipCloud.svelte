@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sponsors } from '$lib/assets/sponsors';
+	import { sponsors } from '$lib/assets/images/sponsors';
 </script>
 
 <section class="p-5 card variant-glass-primary mt-24 flex flex-col items-center">
