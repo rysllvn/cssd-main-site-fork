@@ -47,9 +47,9 @@
 			We are all about building community and a sense of belonging by sharing incredible moments of
 			active freedom on the water. Many of us have had to learn to live with restrictions on
 			mobility and independence. Challenged Sailors San Diego's adaptive sailing program is designed
-			to minimize these restrictions. Stepping aboard a special adapted boat oat throughout the
-			waters of San Diego Bay provides a sense of confidence, autonomy and accomplishment that can
-			have a significant positive effect on life.
+			to minimize these restrictions. Stepping aboard a special adapted boat throughout the waters
+			of San Diego Bay provides a sense of confidence, autonomy and accomplishment that can have a
+			significant positive effect on life.
 		</p>
 		<p>
 			Our fleet is made up of eight Martin 16s. We are one of the few authorized fleets of these
@@ -57,7 +57,7 @@
 			use and enjoyment.
 		</p>
 	</div>
-	<img class="grid" src={fleetShot} alt="" />
+	<img class="grid" src={fleetShot} alt="Fleet of Martin 16s together" />
 </div>
 <hr />
 
