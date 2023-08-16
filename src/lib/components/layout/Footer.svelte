@@ -10,10 +10,10 @@
 				class="flex flex-col flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
 			>
 				<li>
-					<a href="/about" class="anchor">About</a>
+					<a href="/about" class="anchor text-base">About</a>
 				</li>
 				<li>
-					<a href="/contact" class="anchor">Contact</a>
+					<a href="/contact" class="anchor text-base">Contact</a>
 				</li>
 			</ul>
 			<div>

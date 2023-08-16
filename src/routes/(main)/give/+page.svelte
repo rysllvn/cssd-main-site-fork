@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SponsorshipCloud from '$lib/components/SponsorshipCloud.svelte';
 	import groupPhoto from '$lib/assets/images/group_photo.jpg';
+	import fleetShot from '$lib/assets/images/fleet_shot.jpg';
 
 	const titles = [
 		'Legacy: $50,000',
@@ -28,7 +29,7 @@
 				difference in the recreational and therapeutic lives of the disabled.
 			</p>
 		</div>
-		<img class="lg:w-1/2 rounded" src={groupPhoto} alt="group of sailors and volunteers" />
+		<img class="lg:w-1/2 rounded" src={fleetShot} alt="Fleet of Martin 16s by Coronado Bridge" />
 	</div>
 </header>
 
