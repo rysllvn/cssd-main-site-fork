@@ -1,5 +1,6 @@
 <script lang="ts">
 	import logo from '$lib/assets/images/logos/CSSD_EEM_Logo2.jpg';
+	import { navigation, resources } from '$lib/navigation';
 </script>
 
 <footer class="bg-surface-50">
@@ -9,12 +10,20 @@
 			<ul
 				class="flex flex-col flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
 			>
-				<li>
-					<a href="/about" class="anchor text-base">About</a>
-				</li>
-				<li>
-					<a href="/contact" class="anchor text-base">Contact</a>
-				</li>
+				{#each navigation as { href, text }}
+					<li>
+						<a {href}>{text}</a>
+					</li>
+				{/each}
+			</ul>
+			<ul
+				class="flex flex-col flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+			>
+				{#each resources as { href, text }}
+					<li>
+						<a {href}>{text}</a>
+					</li>
+				{/each}
 			</ul>
 			<div>
 				<a href="https://www.facebook.com/challengedsailors/">
