@@ -1,17 +1,19 @@
 <script lang="ts">
 	import BeginJourney from '$lib/components/BeginJourney.svelte';
 	// images
-	import groupPhoto from '$lib/assets/images/group_photo.jpg';
+	import topPicture from '$lib/assets/images/volunteer/top_pic.jpg';
+	import groupPicture from '$lib/assets/images/volunteer/group_photo.jpg';
 	// copy
 	import { roles } from '$lib/copy/volunteer';
 </script>
 
 <header>
-	<h1 class="h1 mb-7">Volunteer</h1>
-	<hr />
-
-	<div class="flex flex-col md:flex-row items-start pt-2">
-		<div class="flex flex-col md:flex-row gap-2 lg:w-1/2">
+	<h1 class="h1">Volunteer</h1>
+</header>
+<hr />
+<section>
+	<div class="flex flex-col md:flex-row items-start pt-2 gap-10">
+		<div class="flex flex-col md:flex-row gap-2 lg:w-3/5">
 			<div class="flex flex-col gap-4">
 				<p class="prose-lg">
 					Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of
@@ -24,11 +26,14 @@
 					have the chance to belong.
 				</p>
 				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
+				<img class="rounded" src={groupPicture} alt="" />
 			</div>
 		</div>
-		<img src={groupPhoto} alt="the group at the docks" class="lg:w-1/2 rounded" />
+		<div class="h-full flex justify-center items-center lg:w-2/5">
+			<img src={topPicture} alt="the group at the docks" class=" rounded" />
+		</div>
 	</div>
-</header>
+</section>
 
 <hr />
 

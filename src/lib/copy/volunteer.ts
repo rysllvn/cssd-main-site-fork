@@ -1,5 +1,5 @@
-import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
-import companionImage from '$lib/assets/images/IMG_4296.jpg';
+import dockSupportImg from '$lib/assets/images/volunteer/IMG_3701.jpg';
+import companionImage from '$lib/assets/images/volunteer/IMG_4296.jpg';
 
 export const roles = [
 	{
