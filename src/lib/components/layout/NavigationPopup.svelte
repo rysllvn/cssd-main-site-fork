@@ -2,8 +2,6 @@
 	import { navigation } from '$lib/navigation';
 	import { type PopupSettings, popup } from '@skeletonlabs/skeleton';
 
-	import ButtonApplication from '../ButtonApplication.svelte';
-
 	const navigationPopup: PopupSettings = {
 		event: 'click',
 		target: 'navigationPopup',
@@ -21,12 +19,6 @@
 
 	<div class="card w-48 shadow-xl" data-popup="navigationPopup">
 		<nav class="list-nav p-1">
-			<ul class="p-2">
-				<li class="flex justify-center">
-					<ButtonApplication />
-				</li>
-			</ul>
-			<hr />
 			<ul class="p-2">
 				<li>
 					<a href="/">

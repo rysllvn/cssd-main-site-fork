@@ -24,7 +24,7 @@
 				Thank you to all of our donors for their continued support. We could not offer free weekly
 				sailing without your generous contributions.
 			</p>
-			<p class="prose-lg">
+			<p class="prose-xl">
 				We offer a range of opportunities for engaging with Challenged Sailors San Diego to make a
 				difference in the recreational and therapeutic lives of the disabled.
 			</p>

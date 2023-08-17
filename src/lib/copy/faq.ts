@@ -2,12 +2,12 @@ export const questionAndAnswers: { question: string; answer: string }[] = [
 	{
 		question: 'Where does CSSD sail?',
 		answer:
-			'We sail on San Diego Bay (from Harbor Island) at Safe Harbor Sunroad Marina. 955 Harbor Island Dr, D Dock, San Diego, CA 92101.'
+			'We sail on San Diego Bay (from Harbor Island) at Safe Harbor Sunroad Marina. 955 Harbor Island Dr, D Dock, San Diego, CA 92101. <a class="anchor" href="/location">details</a>'
 	},
 	{
 		question: 'How much will I be charged?',
 		answer:
-			'Zero. There is no charge to sailing participants. Not to say there isn’t a cost to sailing every weekend…😉…donations make it possible! Give here.'
+			'Zero. There is no charge to sailing participants. Not to say there isn\'t a cost to sailing every weekend…😉…donations make it possible! <a class="anchor" href="/give">Give here.</a>'
 	},
 	{
 		question: 'Are there any age limits?',
@@ -47,8 +47,13 @@ export const questionAndAnswers: { question: string; answer: string }[] = [
 			'We welcome volunteers with any level of experience. Volunteers with previous sailing experience can receive training to become Companion sailors, so they can accompany our participants in the boats. People with little or no sailing experience can start by assisting on the docks, and progress from there. We also welcome volunteers who wish to help with fundraising, outreach, and other off-the-water aspects of our program.'
 	},
 	{
-		question: 'What is the organization’s structure?',
+		question: "What is the organization's structure?",
 		answer:
 			'Challenged Sailors San Diego is a nonprofit charitable California corporation. The key officers and advisory group are listed on the website and are all volunteers. We are always looking for community members who would like to join our team.'
+	},
+	{
+		question: 'When does the sailing take place?',
+		answer:
+			'We sail every Friday and Saturday, from 11:30am to 3:30pm. We also have several regattas and special events planned throughout the year. Please see the <a class="anchor" href="/calendar">calendar</a> for all schedule information.'
 	}
 ];

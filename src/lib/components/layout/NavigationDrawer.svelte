@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import { navigation, resources } from '$lib/navigation';
-	import ButtonApplication from '../ButtonApplication.svelte';
 	function drawerClose(): void {
 		drawerStore.close();
 	}
@@ -9,12 +8,6 @@
 
 <Drawer width="w-64">
 	<nav class="list-nav p-1">
-		<ul class="p-2">
-			<li>
-				<ButtonApplication />
-			</li>
-		</ul>
-		<hr />
 		<ul class="p-2">
 			<li>
 				<a href="/">

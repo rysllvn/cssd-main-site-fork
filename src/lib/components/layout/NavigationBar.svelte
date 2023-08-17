@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { navigation } from '$lib/navigation';
-
-	import ButtonApplication from '../ButtonApplication.svelte';
 </script>
 
-<ButtonApplication />
+<a href="/application" class="shadow btn font-bold 'btn variant-filled-primary w-full">
+	Go Sailing!
+</a>
+
 <nav class="hidden lg:flex">
 	<ul class="flex items-center justify-between gap-7">
 		<li />

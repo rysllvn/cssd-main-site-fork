@@ -1,4 +1,4 @@
-import peter from '$lib/assets/images/people/peter_2.jpg';
+import peter from '$lib/assets/images/people/peter_alternate.jpg';
 import terry from '$lib/assets/images/people/terry.jpg';
 import sam from '$lib/assets/images/people/sam.jpg';
 import sue from '$lib/assets/images/people/sue.jpg';
@@ -20,7 +20,7 @@ export const boardMembers = [
 	{
 		name: 'Sam Graber',
 		title: 'Secretary / Marketing and Communications',
-		bio: "Sam Graber is originally from Washington, D.C. but grew up sailing during summers in the NY Adirondacks on Upper Saranac Lake when his Mom forced him to get on the damn boat. Now he’s a crazy foredecker, never reefs and sails his own Catalina 22 without a motor. But he is VERY responsible with CSSD as a companion sailor. Sam is thrilled to be using his time and talents to serve the disabled community. Every day is a joy when we can give the gift of making memories on the water while being powered by the wind. Let's go sailing!",
+		bio: "Sam Graber is originally from Washington, D.C. but grew up sailing during summers in the NY Adirondacks on Upper Saranac Lake when his Mom forced him to get on the damn boat. Now he's a crazy foredecker, never reefs and sails his own Catalina 22 without a motor. But he is VERY responsible with CSSD as a companion sailor. Sam is thrilled to be using his time and talents to serve the disabled community. Every day is a joy when we can give the gift of making memories on the water while being powered by the wind. Let's go sailing!",
 		src: sam
 	},
 	{ name: 'Eric Matus', title: 'Director' },

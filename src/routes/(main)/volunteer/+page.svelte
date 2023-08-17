@@ -1,25 +1,9 @@
 <script lang="ts">
 	import BeginJourney from '$lib/components/BeginJourney.svelte';
-
-	import dockSupportImg from '$lib/assets/images/IMG_3701.jpg';
-	import companionImage from '$lib/assets/images/IMG_4296.jpg';
-	import groupPicture from '$lib/assets/images/group_photo.jpg';
-	import twoBoats from '$lib/assets/images/two_boats.jpg';
-
-	const roles = [
-		{
-			title: 'Companion sailor',
-			description:
-				'Seeking experienced sailors who can ride along with our disabled sailors to make sure everyone has a smooth ride and enjoyable time on the water.',
-			src: companionImage
-		},
-		{
-			title: 'Dock support',
-			description:
-				'Seeking abled bodied individuals to help transport sailors to the docks, prepare the boats for launch and land our sailors safely when they return.',
-			src: dockSupportImg
-		}
-	];
+	// images
+	import groupPhoto from '$lib/assets/images/group_photo.jpg';
+	// copy
+	import { roles } from '$lib/copy/volunteer';
 </script>
 
 <header>
@@ -42,7 +26,7 @@
 				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
 			</div>
 		</div>
-		<img src={twoBoats} alt="the group at the docks" class="lg:w-1/2 rounded" />
+		<img src={groupPhoto} alt="the group at the docks" class="lg:w-1/2 rounded" />
 	</div>
 </header>
 

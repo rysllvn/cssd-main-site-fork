@@ -7,7 +7,7 @@
 	<p class="prose-xl">
 		Question not answered here? Email <a class="anchor" href="email:toinfo@challengedsailors.org"
 			>info@challengedsailors.org</a
-		> with your particular need and we’ll get back to you ASAP!
+		> with your particular need and we'll get back to you ASAP!
 	</p>
 </header>
 <hr />
@@ -18,7 +18,9 @@
 			<p class="prose-lg text-black card p-2 bg-surface-300 w-fit shadow">
 				{question}
 			</p>
-			<p class="prose-lg card p-2 variant-filled-primary w-fit shadow">{answer}</p>
+			<p class="prose-lg card p-2 variant-filled-surface w-fit shadow">
+				{@html answer}
+			</p>
 		</li>
 	{/each}
 </ul>

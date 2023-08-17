@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { modalStore } from '@skeletonlabs/skeleton';
-</script>
-
 <form
 	class="shadow-sm bg-surface-100 p-2 lg:p-8 rounded-lg max-h-full overflow-y-auto flex flex-col"
 >
@@ -62,9 +58,7 @@
 	</div>
 
 	<div class="mt-6 flex items-center justify-center gap-x-6">
-		<button on:click={() => modalStore.close()} type="button" class="btn variant-filled-secondary"
-			>Cancel</button
-		>
+		<button type="button" class="btn variant-filled-secondary">Cancel</button>
 		<button type="submit" class="btn variant-filled-primary">Submit</button>
 	</div>
 </form>

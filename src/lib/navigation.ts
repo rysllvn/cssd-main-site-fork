@@ -13,7 +13,7 @@ export const resources = [
 		icon: 'tabler:car'
 	},
 	{
-		href: '/preparation',
+		href: '/manuals',
 		text: 'Manuals',
 		icon: 'ion:book-outline'
 	},
