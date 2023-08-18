@@ -12,11 +12,19 @@
 <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
 	<div class="flex flex-col justify-between">
 		<p class="prose-lg lg:prose-xl">
-			Ready to go sailing? Fill out the application below to help us out and we'll be in touch soon.
+			Ready to go sailing? Or looking to volunteer? Both?!? Fill out the initial submission below to
+			get started and we’ll be in touch super soon to talk scheduling!
 		</p>
-		<img class="grid rounded" src={one} alt="" />
+		<img class="grid rounded" src={two} alt="" />
 	</div>
-	<img class="grid rounded" src={two} alt="" />
+	<div class="flex flex-col justify-around">
+		<img class="grid rounded" src={one} alt="" />
+		<p class="prose-lg lg:prose-xl">
+			Or simply email your interest to <a class="anchor" href="mailto:info@challengedsailors.org"
+				>info@challengedsailors.org</a
+			> with your level of interest and we'll respond with a full application packet.
+		</p>
+	</div>
 </section>
 <hr />
 <ApplicationForm />
