@@ -15,8 +15,8 @@
 
 <hr />
 
-<div class="flex gap-8">
-	<div class="w-1/2 gap-10 flex flex-col">
+<div class="flex-col lg:flex-row flex gap-8">
+	<div class="lg:w-3/5 gap-10 flex flex-col">
 		<p>
 			Challenged Sailors San Diego is a registered 501c3 nonprofit dedicated to making weekly
 			sailing FREE for disabled sailors. We are a nationally recognized disabled recreative program
@@ -32,21 +32,8 @@
 			beginners. All have seen a tremendous improvement in their lives through adaptive sailing.
 		</p>
 		<img class="shadow rounded grid" src={fleetShot} alt="Fleet of Martin 16s together" />
-		<p>
-			We are all about building community and a sense of belonging by sharing incredible moments of
-			active freedom on the water. Many of us have had to learn to live with restrictions on
-			mobility and independence. Challenged Sailors San Diego's adaptive sailing program is designed
-			to minimize these restrictions. Stepping aboard a special adapted boat throughout the waters
-			of San Diego Bay provides a sense of confidence, autonomy and accomplishment that can have a
-			significant positive effect on life.
-		</p>
-		<p>
-			Our fleet is made up of eight Martin 16s. We are one of the few authorized fleets of these
-			specially-designed adaptive sailboats. These are 16' sailboats designed for ease of access,
-			use and enjoyment.
-		</p>
 	</div>
-	<div class="w-1/2">
+	<div class="lg:w-2/5">
 		<img class="rounded shadow" src={one} alt="" />
 	</div>
 </div>
