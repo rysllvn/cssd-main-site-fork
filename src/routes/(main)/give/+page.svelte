@@ -34,7 +34,10 @@
 <hr />
 <section class="flex flex-col lg:flex-row gap-8">
 	<div class="lg:w-2/5 flex flex-col items-center">
-		<button class="btn text-2xl variant-filled-secondary w-fit shadow-sm mb-8">Donate Now!</button>
+		<a
+			href="https://www.paypal.com/donate?token=PX5PO5bupCTgFuzvBDpKiQIe2-pD--nHI-L-2vyRKrier0nUtzI1JGyITrbRrVrOQcn9iscXlPNtl-dS"
+			class="btn text-2xl variant-filled-secondary w-fit shadow-sm mb-8">Donate Now!</a
+		>
 		<ul class="flex flex-col items-center justify-center gap-2">
 			{#each titles as title}
 				<li class="prose-xl">{title}</li>
