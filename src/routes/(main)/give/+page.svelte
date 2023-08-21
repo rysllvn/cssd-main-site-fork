@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SponsorshipCloud from '$lib/components/SponsorshipCloud.svelte';
-	import groupPhoto from '$lib/assets/images/give/one.jpg';
-	import fleetShot from '$lib/assets/images/give/two.jpg';
+	import one from '$lib/assets/images/give/one.jpg';
+	import two from '$lib/assets/images/give/two.jpg';
 
 	const titles = [
 		'Legacy: $50,000',
@@ -29,7 +29,7 @@
 			difference in the recreational and therapeutic lives of the disabled.
 		</p>
 	</div>
-	<img class="lg:w-1/2 rounded" src={fleetShot} alt="Fleet of Martin 16s by Coronado Bridge" />
+	<img class="lg:w-1/2 rounded shadow-sm" src={two} alt="Group posing after sail with donation" />
 </section>
 <hr />
 <section class="flex flex-col lg:flex-row gap-8">
@@ -44,7 +44,11 @@
 			{/each}
 		</ul>
 	</div>
-	<img class="lg:w-3/5" src={groupPhoto} alt="" />
+	<img
+		class="lg:w-3/5 rounded shadow-sm"
+		src={one}
+		alt="Peter accepting Channel Cruising Club donation"
+	/>
 </section>
 <hr />
 <SponsorshipCloud />

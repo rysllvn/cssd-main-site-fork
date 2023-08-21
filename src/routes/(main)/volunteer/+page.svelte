@@ -26,11 +26,15 @@
 					have the chance to belong.
 				</p>
 				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
-				<img class="rounded" src={groupPicture} alt="" />
+				<img class="shadow rounded" src={groupPicture} alt="Group posing after sail" />
 			</div>
 		</div>
 		<div class="h-full flex justify-center items-center lg:w-2/5">
-			<img src={topPicture} alt="the group at the docks" class=" rounded" />
+			<img
+				src={topPicture}
+				alt="Selfie on the boat with companion and sailor"
+				class="shadow rounded"
+			/>
 		</div>
 	</div>
 </section>

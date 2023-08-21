@@ -31,7 +31,7 @@
 			transformative nature of adaptive sailing. Some of us are experienced sailors. Some are
 			beginners. All have seen a tremendous improvement in their lives through adaptive sailing.
 		</p>
-		<img class="grid" src={fleetShot} alt="Fleet of Martin 16s together" />
+		<img class="shadow rounded grid" src={fleetShot} alt="Fleet of Martin 16s together" />
 		<p>
 			We are all about building community and a sense of belonging by sharing incredible moments of
 			active freedom on the water. Many of us have had to learn to live with restrictions on
@@ -47,14 +47,14 @@
 		</p>
 	</div>
 	<div class="w-1/2">
-		<img class="rounded" src={one} alt="" />
+		<img class="rounded shadow" src={one} alt="" />
 	</div>
 </div>
 
 <hr />
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
-	<img class="grid rounded" src={groupPhoto} alt="Sailors and Volunteers" />
+	<img class="grid rounded shadow" src={groupPhoto} alt="Sailors and Volunteers" />
 	<div class="flex flex-col gap-10">
 		<section class="mb-4">
 			<h2 class="h2 mb-4">Mission</h2>
