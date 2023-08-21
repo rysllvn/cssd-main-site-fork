@@ -15,10 +15,10 @@
 			Ready to go sailing? Or looking to volunteer? Both?!? Fill out the initial submission below to
 			get started and we’ll be in touch super soon to talk scheduling!
 		</p>
-		<img class="grid rounded" src={two} alt="" />
+		<img class="shadow grid rounded" src={two} alt="" />
 	</div>
 	<div class="flex flex-col justify-around">
-		<img class="grid rounded" src={one} alt="" />
+		<img class="shadow grid rounded" src={one} alt="" />
 		<p class="prose-lg lg:prose-xl">
 			Or simply email your interest to <a class="anchor" href="mailto:info@challengedsailors.org"
 				>info@challengedsailors.org</a
