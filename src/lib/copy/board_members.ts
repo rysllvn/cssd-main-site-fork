@@ -1,4 +1,4 @@
-import peter from '$lib/assets/images/people/peter_alternate.jpg';
+import peter from '$lib/assets/images/people/peter_3.jpg';
 import terry from '$lib/assets/images/people/terry.jpg';
 import sam from '$lib/assets/images/people/sam.jpg';
 import sue from '$lib/assets/images/people/sue.jpg';
@@ -23,12 +23,16 @@ export const boardMembers = [
 		bio: "Sam Graber is originally from Washington, D.C. but grew up sailing during summers in the NY Adirondacks on Upper Saranac Lake when his Mom forced him to get on the damn boat. Now he's a crazy foredecker, never reefs and sails his own Catalina 22 without a motor. But he is VERY responsible with CSSD as a companion sailor. Sam is thrilled to be using his time and talents to serve the disabled community. Every day is a joy when we can give the gift of making memories on the water while being powered by the wind. Let's go sailing!",
 		src: sam
 	},
-	{ name: 'Eric Matus', title: 'Director' },
 	{
 		name: 'Sue Taetzsch',
 		title: 'Director',
 		bio: 'I joined Challenged Sailors San Diego when it first opened as a nonprofit in 2015. I have been the scheduler since then and I am currently one of the BOD members for Challenged Sailors San Diego. I graduated with a degree in Therapeutic Recreation, received my Masters in Rehabilitation Counseling for the Deaf and post graduate in Certificate in Post Employment Training Administration of programs serving individuals who are Deaf, Late Deafened and Hard of Hearing, I grew up sailing and love being involved in providing sailing opportunities to people with disabilities, new or returning sailors.',
 		src: sue
 	},
-	{ name: 'Dan Willan', title: 'Director', src: dan }
+	{
+		name: 'Daniel Willan',
+		title: 'Director',
+		bio: 'I have lived in San Diego since 1972 when my father, who was a Naval officer, received his duty station orders for San Diego. I have had several careers but currently and for the past 30 years as a Sales Engineer in the telecommunications field. Over my years of living, I was introduced to CSSD by a fellow ABI student and reached out to CSSD. I started as a Sailor and quickly advanced to Companion Sailor, Dock Help and Dock Lead, Chase Boat Driver and currently as a Director of Community Outreach. I enjoy helping new sailors and new volunteers get acquainted with sailing and the enjoyment I have being on the water in San Diego Bay with Challenged Sailor San Diego.',
+		src: dan
+	}
 ];
