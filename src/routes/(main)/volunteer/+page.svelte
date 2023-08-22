@@ -13,23 +13,29 @@
 <hr />
 <section>
 	<div class="flex flex-col md:flex-row items-start pt-2 gap-10">
-		<div class="flex flex-col md:flex-row gap-2 lg:w-3/5">
+		<div class="flex flex-col md:flex-row gap-2 lg:w-4/5">
 			<div class="flex flex-col gap-4">
-				<p class="prose-lg">
-					Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of
-					volunteers to help with companion sailing, dock support and coordination. It's a true team
-					effort.
-				</p>
-				<BeginJourney />
+				<div class="flex">
+					<div class="w-3/5 flex flex-col justify-around">
+						<p class="prose-lg">
+							Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of
+							volunteers to help with companion sailing, dock support and coordination. It's a true
+							team effort.
+						</p>
+						<BeginJourney />
+					</div>
+					<div class="w-2/5">
+						<img class="shadow rounded max-w-96" src={groupPicture} alt="Group posing after sail" />
+					</div>
+				</div>
 				<p class="prose-lg">
 					Become a volunteer today and make a life changing impact on someone who otherwise wouldn't
 					have the chance to belong.
 				</p>
 				<p class="prose-lg">On the water we're all sailors, no more difference.</p>
-				<img class="shadow rounded" src={groupPicture} alt="Group posing after sail" />
 			</div>
 		</div>
-		<div class="h-full flex justify-center items-center lg:w-2/5">
+		<div class="lg:w-1/5">
 			<img
 				src={topPicture}
 				alt="Selfie on the boat with companion and sailor"
