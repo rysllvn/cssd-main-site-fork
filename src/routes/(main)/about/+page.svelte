@@ -15,32 +15,30 @@
 
 <hr />
 
-<div class="flex-col lg:flex-row flex gap-8">
-	<div class="lg:w-3/5 gap-10 flex flex-col">
-		<p>
+<section class="grid grid-cols-[1fr_3fr_1fr] gap-8">
+	<img class="shadow rounded grid w-96" src={fleetShot} alt="Fleet of Martin 16s together" />
+	<div class="flex flex-col gap-8">
+		<p class="prose-base">
 			Challenged Sailors San Diego is a registered 501c3 nonprofit dedicated to making weekly
 			sailing FREE for disabled sailors. We are a nationally recognized disabled recreative program
 			with a unique offering - we sail every weekend!
 		</p>
-		<p>
+		<p class="prose-base">
 			Every Friday and Saturday our sailors and volunteers come together to go sailing on San
 			Diego's beautiful harbor waters.
 		</p>
-		<p>
+		<p class="prose-base">
 			The participants and volunteers of Challenged Sailors San Diego have experienced the
 			transformative nature of adaptive sailing. Some of us are experienced sailors. Some are
 			beginners. All have seen a tremendous improvement in their lives through adaptive sailing.
 		</p>
-		<img class="shadow rounded grid" src={fleetShot} alt="Fleet of Martin 16s together" />
 	</div>
-	<div class="lg:w-2/5">
-		<img class="rounded shadow" src={one} alt="" />
-	</div>
-</div>
+	<img class="grid rounded shadow" src={one} alt="" />
+</section>
 
 <hr />
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+<section class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-7">
 	<img class="grid rounded shadow" src={groupPhoto} alt="Sailors and Volunteers" />
 	<div class="flex flex-col gap-10">
 		<section class="mb-4">
@@ -60,7 +58,7 @@
 			</p>
 		</section>
 	</div>
-</div>
+</section>
 
 <hr />
 <section class="flex flex-col">
