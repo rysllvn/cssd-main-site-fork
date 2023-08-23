@@ -3,6 +3,7 @@ import terry from '$lib/assets/images/people/terry.jpg';
 import sam from '$lib/assets/images/people/sam.jpg';
 import sue from '$lib/assets/images/people/sue.jpg';
 import dan from '$lib/assets/images/people/dan.jpeg';
+import eric from '$lib/assets/images/people/eric1.jpeg';
 
 export const boardMembers = [
 	{
@@ -34,5 +35,11 @@ export const boardMembers = [
 		title: 'Director',
 		bio: 'I have lived in San Diego since 1972 when my father, who was a Naval officer, received his duty station orders for San Diego. I have had several careers but currently and for the past 30 years as a Sales Engineer in the telecommunications field. Over my years of living, I was introduced to CSSD by a fellow ABI student and reached out to CSSD. I started as a Sailor and quickly advanced to Companion Sailor, Dock Help and Dock Lead, Chase Boat Driver and currently as a Director of Community Outreach. I enjoy helping new sailors and new volunteers get acquainted with sailing and the enjoyment I have being on the water in San Diego Bay with Challenged Sailor San Diego.',
 		src: dan
+	},
+	{
+		name: 'Eric Matus',
+		title: 'Director',
+		bio: 'In 2018 I was in a paragliding accident resulting in an L1 burst fracture and bruised spinal cord.  After recovering enough to use a walker I visited Challenged Sailors SD and was lifted into a Martin 16.  Once I realized I could sail again I began to sail regularly.  This led to my applying my 60 years of sailing experience to qualify as a Chase Boat Operator, ASA and US Sailing Basic Keelboat Instructor.  I also rewrote the CSSD Basic Sailing Manual and authored Chase Boat Operator and Dock Leader Manuals.  I now own and race a Schock Santana 525, a 25-foot sailboat along with participating and volunteering with Challenged Sailors.',
+		src: eric
 	}
 ];
