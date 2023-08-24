@@ -2,8 +2,8 @@
 	import Map from '$lib/components/Map.svelte';
 </script>
 
-<header class="flex justify-center items-center gap-2">
-	<h1 class="h1 self-center">Getting Here</h1>
+<header>
+	<h1 class="h1">Getting Here</h1>
 </header>
 
 <hr />
