@@ -12,20 +12,25 @@
 		const map = new mapboxgl.Map({
 			container: div,
 			style: 'mapbox://styles/mapbox/streets-v12',
-			center: [-117.19326258246849, 32.72541741429073],
+			center: [-117.19326258246849, 32.7287],
 			zoom: 14
 		});
 		map.on('click', (e) => {
 			console.log(e);
 		});
+		// Set marker options.
+		const marker = new mapboxgl.Marker({
+			color: '#86D0CB',
+			draggable: true
+		})
+			.setLngLat([-117.19326258246849, 32.72541741429073])
+			.setPopup(
+				new mapboxgl.Popup().setHTML(
+					'<a class="anchor" target="_blank" href="//maps.google.com/maps?v=2&f=q&ie=UTF8&t=m&iwloc=&q=955+Harbor+Island+Drive%2c+San+Diego%2c+CA%2c+United+States&z=14&source=embed">955 Harbor Island Drive, San Diego, CA</>'
+				)
+			)
+			.addTo(map);
 	});
 </script>
 
-<div id="map" bind:this={div} />
-
-<style>
-	#map {
-		height: 400px;
-		width: 400px;
-	}
-</style>
+<div id="map" class="rounded h-[300px] w-[400px]" bind:this={div} />

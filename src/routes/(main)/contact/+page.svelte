@@ -26,10 +26,22 @@
 		<iconify-icon icon="twemoji:sailboat" class="text-6xl" />
 		<div class="flex flex-col">
 			<div class="font-bold">Sailing Address</div>
-			<div>
+			<a
+				class="anchor"
+				target="_blank"
+				href="//maps.google.com/maps?v=2&f=q&ie=UTF8&t=m&iwloc=&q=955+Harbor+Island+Drive%2c+San+Diego%2c+CA%2c+United+States&z=14&source=embed"
+			>
 				955 Harbor Island Drive
 				<div>San Diego, CA</div>
-				<div>Dock D, West end of Sunroad Marina parking lot</div>
+			</a>
+
+			<div>
+				Dock D, West end of <a
+					class="anchor"
+					href="https://shmarinas.com/locations/safe-harbor-sunroad/"
+					>Sunroad Marina
+				</a>
+				parking lot
 			</div>
 		</div>
 	</li>
