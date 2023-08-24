@@ -44,8 +44,8 @@ export const boardMembers = [
 		src: eric
 	},
 	{
-		name: 'Stephen Bridge M.D.',
-		title: 'Director',
+		name: 'Steve Bridge M.D.',
+		title: 'Member, Board of Advisors',
 		bio: 'Stephen Bridge M.D. is a retired urologic surgeon who grew up in Pacific Beach and started sailing around the age of 5. He sailed competitively in the junior program at Mission Bay Yacht Club and competed in many regattas in the San Diego area and around Southern California, winning numerous awards skippering a Sabot, OK Dinghy, and Lido 14. He learned of CSSD from one of his patients in 2019 and started volunteering shortly thereafter as dock help and, subsequently, as a companion sailor. He has also served as dock leader and chase boat operator and is proficient in setting up the Power Assist Unit for the Martin 16 as well as rigging the higher performance SKUD-18 and flying the spinnaker in both the Martin and SKUD. He has participated in Martin 16 races as a companion sailor in the Mid-Winter and KMAC regattas at Coronado Yacht Club and the Point Loma Yacht Club regatta on San Diego Bay.',
 		src: steve
 	}
