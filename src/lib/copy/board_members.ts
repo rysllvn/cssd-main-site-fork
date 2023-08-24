@@ -4,6 +4,7 @@ import sam from '$lib/assets/images/people/sam.jpg';
 import sue from '$lib/assets/images/people/sue.jpg';
 import dan from '$lib/assets/images/people/dan.jpeg';
 import eric from '$lib/assets/images/people/eric1.jpeg';
+import steve from '$lib/assets/images/people/Steve_B.jpg';
 
 export const boardMembers = [
 	{
@@ -41,5 +42,11 @@ export const boardMembers = [
 		title: 'Director',
 		bio: 'In 2018 I was in a paragliding accident resulting in an L1 burst fracture and bruised spinal cord.  After recovering enough to use a walker I visited Challenged Sailors SD and was lifted into a Martin 16.  Once I realized I could sail again I began to sail regularly.  This led to my applying my 60 years of sailing experience to qualify as a Chase Boat Operator, ASA and US Sailing Basic Keelboat Instructor.  I also rewrote the CSSD Basic Sailing Manual and authored Chase Boat Operator and Dock Leader Manuals.  I now own and race a Schock Santana 525, a 25-foot sailboat along with participating and volunteering with Challenged Sailors.',
 		src: eric
+	},
+	{
+		name: 'Stephen Bridge M.D.',
+		title: 'Director',
+		bio: 'Stephen Bridge M.D. is a retired urologic surgeon who grew up in Pacific Beach and started sailing around the age of 5. He sailed competitively in the junior program at Mission Bay Yacht Club and competed in many regattas in the San Diego area and around Southern California, winning numerous awards skippering a Sabot, OK Dinghy, and Lido 14. He learned of CSSD from one of his patients in 2019 and started volunteering shortly thereafter as dock help and, subsequently, as a companion sailor. He has also served as dock leader and chase boat operator and is proficient in setting up the Power Assist Unit for the Martin 16 as well as rigging the higher performance SKUD-18 and flying the spinnaker in both the Martin and SKUD. He has participated in Martin 16 races as a companion sailor in the Mid-Winter and KMAC regattas at Coronado Yacht Club and the Point Loma Yacht Club regatta on San Diego Bay.',
+		src: steve
 	}
 ];
