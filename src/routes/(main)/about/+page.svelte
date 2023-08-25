@@ -15,7 +15,7 @@
 
 <hr />
 
-<section class="grid grid-cols-[1fr_3fr_1fr] gap-8">
+<section class="grid grid-cols-1 md:grid-cols-[1fr_3fr_1fr] gap-8">
 	<img class="shadow rounded grid w-96" src={fleetShot} alt="Fleet of Martin 16s together" />
 	<div class="flex flex-col gap-8">
 		<p class="prose-base">
