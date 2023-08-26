@@ -1,10 +1,10 @@
-import peter from '$lib/assets/images/people/peter_3.jpg';
-import terry from '$lib/assets/images/people/terry.jpg';
+import peter from '$lib/assets/images/people/peter_3.jpg?w=400&imagetools';
+import terry from '$lib/assets/images/people/terry.jpg?w=400&imagetools';
 import sam from '$lib/assets/images/people/sam.jpg';
-import sue from '$lib/assets/images/people/sue.jpg';
-import dan from '$lib/assets/images/people/dan.jpeg';
+import sue from '$lib/assets/images/people/sue.jpg?w=400&imagetools';
+import dan from '$lib/assets/images/people/dan.jpeg?w=400&imagetools';
 import eric from '$lib/assets/images/people/eric1.jpeg';
-import steve from '$lib/assets/images/people/Steve_B.jpg';
+import steve from '$lib/assets/images/people/Steve_B.jpg?w=400&imagetools';
 
 export const boardMembers = [
 	{

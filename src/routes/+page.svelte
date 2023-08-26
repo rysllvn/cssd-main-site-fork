@@ -1,6 +1,6 @@
 <script lang="ts">
 	import YoutubeEmbed from '$lib/components/YoutubeEmbed.svelte';
-	import src from '$lib/assets/images/landing/two_boats.jpg';
+	import src from '$lib/assets/images/landing/two_boats.jpg?w=1200&imagetools';
 </script>
 
 <section

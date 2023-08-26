@@ -1,8 +1,8 @@
 <script lang="ts">
 	import BeginJourney from '$lib/components/BeginJourney.svelte';
 	// images
-	import topPicture from '$lib/assets/images/volunteer/top_pic.jpg';
-	import groupPicture from '$lib/assets/images/volunteer/group_photo.jpg';
+	import topPicture from '$lib/assets/images/volunteer/top_pic.jpg?w=300&imagetools';
+	import groupPicture from '$lib/assets/images/volunteer/group_photo.jpg?w=400&imagetools';
 	// copy
 	import { roles } from '$lib/copy/volunteer';
 </script>
@@ -15,7 +15,7 @@
 	<div class="flex flex-col md:flex-row items-start pt-2 gap-10">
 		<div class="flex flex-col md:flex-row gap-2 lg:w-4/5">
 			<div class="flex flex-col gap-4">
-				<div class="flex">
+				<div class="flex gap-2">
 					<div class="w-3/5 flex flex-col justify-around">
 						<p class="prose-lg">
 							Our volunteers are the lifeblood or our organization. Each week we rely on a myriad of

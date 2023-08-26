@@ -2,9 +2,9 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 	// images
-	import fleetShot from '$lib/assets/images/about/fleet_shot.jpg';
-	import groupPhoto from '$lib/assets/images/about/two.jpg';
-	import one from '$lib/assets/images/about/one.jpg';
+	import fleetShot from '$lib/assets/images/about/fleet_shot.jpg?w=400&imagetools';
+	import groupPhoto from '$lib/assets/images/about/two.jpg?w=500&imagetools';
+	import one from '$lib/assets/images/about/one.jpg?w=300&imagetools';
 
 	import { boardMembers } from '$lib/copy/board_members';
 </script>

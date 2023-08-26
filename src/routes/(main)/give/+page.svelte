@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SponsorshipCloud from '$lib/components/SponsorshipCloud.svelte';
-	import one from '$lib/assets/images/give/one.jpg';
-	import two from '$lib/assets/images/give/two.jpg';
+	import one from '$lib/assets/images/give/one.jpg?w=500&imagetools';
+	import two from '$lib/assets/images/give/two.jpg?w=400&imagetools';
 
 	const titles = [
 		'Legacy: $50,000',

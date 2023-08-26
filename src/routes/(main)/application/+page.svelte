@@ -1,8 +1,8 @@
 <script lang="ts">
 	import ApplicationForm from '$lib/components/ApplicationForm.svelte';
 
-	import one from '$lib/assets/images/application/one.jpeg';
-	import two from '$lib/assets/images/application/two.jpg';
+	import one from '$lib/assets/images/application/one.jpeg?w=800&imagetools';
+	import two from '$lib/assets/images/application/two.jpg?w=400&imagetools';
 </script>
 
 <header>
