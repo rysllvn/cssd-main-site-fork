@@ -1,12 +1,16 @@
 <script lang="ts">
 	import BeginJourney from '$lib/components/BeginJourney.svelte';
+	import picOne from '$lib/assets/images/contact/contact_one.jpg?w=400&imagetools';
 </script>
 
 <header>
 	<h1 class="h1">Contact</h1>
 </header>
 <hr />
-<BeginJourney />
+<div class="flex gap-8 flex-col md:flex-row items-center">
+	<BeginJourney />
+	<img src={picOne} alt="Martin 16 on a port tack" class="rounded shadow" />
+</div>
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
 	<li class="card p-5 bg-primary-100 shadow-sm flex items-center">
 		<a href="emailto:info@challengedsailors.org" class="flex items-center anchor gap-8">
@@ -62,15 +66,19 @@
 
 	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
 		<h2 class="font-bold">Social Media</h2>
-		<div class="flex justify-center gap-8 items-center w-full">
+		<div class="flex justify-center gap-6 items-center w-full">
 			<a href="https://www.facebook.com/challengedsailors/">
-				<iconify-icon icon="logos:facebook" class="text-4xl hover:scale-110" />
+				<iconify-icon icon="logos:facebook" class="text-4xl hover:scale-110" alt="facebook" />
 			</a>
 			<a href="https://www.instagram.com/challengedsailors">
-				<iconify-icon icon="skill-icons:instagram" class="text-4xl hover:scale-110" />
+				<iconify-icon
+					icon="skill-icons:instagram"
+					class="text-4xl hover:scale-110"
+					alt="instagram"
+				/>
 			</a>
 			<a href="https://twitter.com/challsailSD">
-				<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" />
+				<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" alt="twitter" />
 			</a>
 		</div>
 	</li>

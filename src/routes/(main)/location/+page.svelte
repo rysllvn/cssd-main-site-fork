@@ -60,8 +60,8 @@
 			<iconify-icon icon="tabler:parking" class="text-4xl" />
 		</div>
 		<p>
-			By car - free parking is available (except on some holidays and special events) in the back
-			row of spaces west of the Sunroad Resort Marina office building.
+			By car - free parking is available in the back row of spaces west of the Sunroad Resort Marina
+			office building, NOT in the first 3 rows.
 		</p>
 	</div>
 

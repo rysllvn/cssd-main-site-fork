@@ -5,6 +5,11 @@ export const questionAndAnswers: { question: string; answer: string }[] = [
 			'We sail on San Diego Bay (from Harbor Island) at Safe Harbor Sunroad Marina. 955 Harbor Island Dr, D Dock, San Diego, CA 92101. <a class="anchor" href="/location">details</a>'
 	},
 	{
+		question: 'When does the sailing take place?',
+		answer:
+			'We sail every Friday and Saturday, from 11:30am to 3:30pm. We also have several regattas and special events planned throughout the year. Please see the <a class="anchor" href="/calendar">calendar</a> for all schedule information.'
+	},
+	{
 		question: 'How much will I be charged?',
 		answer:
 			'Zero. There is no charge to sailing participants. Not to say there isn\'t a cost to sailing every weekend…😉…donations make it possible! <a class="anchor" href="/give">Give here.</a>'
@@ -20,7 +25,8 @@ export const questionAndAnswers: { question: string; answer: string }[] = [
 	},
 	{
 		question: 'Are there bathrooms on the sailboat?',
-		answer: 'Sorry, no.'
+		answer:
+			'Not on the sailboat. However, the marina has accessible restrooms which are available for use before and after sailing.'
 	},
 	{
 		question: 'How long will I be sailing?',
@@ -50,10 +56,5 @@ export const questionAndAnswers: { question: string; answer: string }[] = [
 		question: "What is the organization's structure?",
 		answer:
 			'Challenged Sailors San Diego is a nonprofit charitable California corporation. The key officers and advisory group are listed on the website and are all volunteers. We are always looking for community members who would like to join our team.'
-	},
-	{
-		question: 'When does the sailing take place?',
-		answer:
-			'We sail every Friday and Saturday, from 11:30am to 3:30pm. We also have several regattas and special events planned throughout the year. Please see the <a class="anchor" href="/calendar">calendar</a> for all schedule information.'
 	}
 ];

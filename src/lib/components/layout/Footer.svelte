@@ -27,12 +27,15 @@
 				{/each}
 			</ul>
 			<Carousel />
-			<div>
+			<div class="flex gap-2 items-center">
 				<a href="https://www.facebook.com/challengedsailors/">
 					<iconify-icon icon="logos:facebook" class="text-4xl hover:scale-110" />
 				</a>
 				<a href="https://www.instagram.com/challengedsailors">
 					<iconify-icon icon="skill-icons:instagram" class="text-4xl hover:scale-110" />
+				</a>
+				<a href="https://twitter.com/challsailSD">
+					<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" />
 				</a>
 			</div>
 		</div>
