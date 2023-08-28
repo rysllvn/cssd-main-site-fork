@@ -2,6 +2,7 @@
 	import SponsorshipCloud from '$lib/components/SponsorshipCloud.svelte';
 	import one from '$lib/assets/images/give/one.jpg?w=500&imagetools';
 	import two from '$lib/assets/images/give/two.jpg?w=400&imagetools';
+	import PayPal from '$lib/components/PayPal.svelte';
 
 	const titles = [
 		'Legacy: $50,000',
@@ -21,10 +22,7 @@
 
 <section class="flex flex-col lg:flex-row gap-8">
 	<div class="lg:w-3/5 flex flex-col items-center">
-		<a
-			href="https://www.paypal.com/donate?token=PX5PO5bupCTgFuzvBDpKiQIe2-pD--nHI-L-2vyRKrier0nUtzI1JGyITrbRrVrOQcn9iscXlPNtl-dS"
-			class="btn text-2xl variant-filled-secondary w-fit shadow-sm mb-8">Donate Now!</a
-		>
+		<PayPal />
 		<ul class="flex flex-col items-center justify-center gap-2">
 			{#each titles as title}
 				<li class="prose-xl">{title}</li>
