@@ -14,7 +14,7 @@
 		name="submit"
 		alt="PayPal - The safer, easier way to pay online!"
 	/>
-	<input type="hidden" name="bn" value="godaddy_hosting_WPS_US" />
+	<!-- <input type="hidden" name="bn" value="godaddy_hosting_WPS_US" />
 	<img
 		alt=""
 		style="border-width: 0"
@@ -22,5 +22,5 @@
 		width="1"
 		height="1"
 		lepkoua3k=""
-	/>
+	/> -->
 </form>

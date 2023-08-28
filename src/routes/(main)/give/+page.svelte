@@ -21,8 +21,10 @@
 <hr />
 
 <section class="flex flex-col lg:flex-row gap-8">
-	<div class="lg:w-3/5 flex flex-col items-center">
-		<PayPal />
+	<div class="lg:w-3/5 flex flex-col items-center gap-2">
+		<div class="card variant-filled-surface p-2 shadow">
+			<PayPal />
+		</div>
 		<ul class="flex flex-col items-center justify-center gap-2">
 			{#each titles as title}
 				<li class="prose-xl">{title}</li>
