@@ -2,7 +2,7 @@
 	import { navigation } from '$lib/navigation';
 </script>
 
-<a href="/application" class="shadow btn font-bold 'btn variant-filled-primary w-full">
+<a href="/gosailing" class="shadow btn font-bold 'btn variant-filled-primary w-full">
 	Go Sailing!
 </a>
 
