@@ -2,6 +2,7 @@
 	import sailingManual from '$lib/assets/documents/CSSD Sailing Manual Online 20230707 updates.pdf';
 	import dockManual from '$lib/assets/documents/CSSD Dock Leader Manual 20230711updts.pdf';
 	import martinManual from '$lib/assets/documents/Martin 16 Setup 2_02.pdf';
+	import chaseManual from '$lib/assets/documents/CSSD Chase Boat Operator Manual Online 20221014Final.pdf';
 	import visuallyImpairedManual from '$lib/assets/documents/Sailing Manual Online visual impaired v1.pdf';
 
 	const manuals = [
@@ -16,6 +17,10 @@
 		{
 			href: martinManual,
 			title: 'Martin 16 Setup'
+		},
+		{
+			href: chaseManual,
+			title: 'Chase Boat Operator Manual'
 		},
 		{
 			href: visuallyImpairedManual,

@@ -47,7 +47,7 @@
 
 <hr />
 
-<ul class="flex flex-col lg:flex-row gap-4 justify-around">
+<ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-around">
 	{#each roles as { title, description, src }}
 		<li class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl bg-primary-100">
 			<img
