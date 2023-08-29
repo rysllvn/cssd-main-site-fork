@@ -65,17 +65,15 @@
 	<h2 class="h2 mb-4">Board of Directors</h2>
 	<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		{#each boardMembers as { name, title, src, bio }}
-			<li class="flex items-center gap-3 card bg-primary-100 p-4 shadow">
-				<div class="flex flex-col w-1/2 items-center gap-4">
-					<Avatar {src} width="w-full" />
+			<li class="card bg-primary-100 p-4 shadow h-fit">
+				<div class="my-auto mr-4 mb-4 flex flex-col w-72 h-fit items-center gap-4 float-left">
+					<Avatar {src} width="w-48" />
 					<div>
 						<h3 class="h3">{name}</h3>
 						<h4>{title}</h4>
 					</div>
 				</div>
-				<div class="w-1/2">
-					<p>{bio}</p>
-				</div>
+				<p>{bio}</p>
 			</li>
 		{/each}
 	</ul>

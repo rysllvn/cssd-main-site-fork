@@ -9,6 +9,7 @@
 		'Admiral:  $20,000',
 		'Captain: $10,000',
 		'First Mate: $5,000',
+		'Second Mate: $2,500',
 		'Bosun: $1,000',
 		'Crew: up to $500',
 		'Friend: Up to $250'
