@@ -51,8 +51,8 @@
 			<select class="select" size="4" value="">
 				<option value="Friday">Total newbie</option>
 				<option value="Saturday">Been sailing a couple times</option>
-				<option value="Saturday">Veteran</option>
-				<option value="Saturday">America's Cup</option>
+				<option value="Saturday">Frequent sailor</option>
+				<option value="Saturday">Very Experienced</option>
 			</select>
 		</div>
 		<div class="col-span-6 lg:col-span-3">

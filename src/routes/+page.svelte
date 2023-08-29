@@ -13,9 +13,9 @@
 			class="text-white mb-10 variant-glass-surface card w-full px-4 py-6 flex flex-col items-center gap-10"
 		>
 			<p class="prose-2xl">
-				Adaptive sailing at its finest! Every Friday and Saturday on San Diego Harbor. For FREE, no
-				experience necessary. We have special boats to make it fun and enjoyable for a wide range of
-				disabilities.
+				Adaptive sailing at its finest! Every Friday and Saturday on San Diego Harbor. All sailing
+				is free, no experience necessary. We have special boats that make sailing fun and enjoyable
+				for people with a wide range of disabilities.
 			</p>
 			<p class="prose-2xl">
 				Winner of the US Sailing 2022 Robie Pierce Award for excellence in Adaptive Sailing.
