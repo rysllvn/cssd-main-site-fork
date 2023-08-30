@@ -22,8 +22,12 @@
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import NavigationDrawer from '$lib/components/layout/NavigationDrawer.svelte';
+
+	// Modal
+	import { Modal } from '@skeletonlabs/skeleton';
 </script>
 
+<Modal />
 <NavigationDrawer />
 <AppShell>
 	<svelte:fragment slot="header"><Header /></svelte:fragment>
