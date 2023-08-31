@@ -60,7 +60,7 @@
 	<iframe
 		on:load={hideSmallSpinner}
 		title="Calendar"
-		src="https://www.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23FFFFFF&src=scheduler%40challengedsailors.org&color=%232952A3&ctz=America%2FLos_Angeles"
+		src="https://www.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23FFFFFF&src=scheduler%40challengedsailors.org&color=%232952A3&ctz=America%2FLos_Angeles&mode=AGENDA"
 		style="border: 0; border-radius: 6px;"
 		width="400"
 		height="600"
