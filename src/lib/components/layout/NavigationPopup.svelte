@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { navigation } from '$lib/navigation';
 	import { type PopupSettings, popup } from '@skeletonlabs/skeleton';
+	import { base } from '$app/paths';
 
 	const navigationPopup: PopupSettings = {
 		event: 'click',
@@ -21,7 +22,7 @@
 		<nav class="list-nav p-1">
 			<ul class="p-2">
 				<li>
-					<a href="/">
+					<a href="{base}/">
 						<iconify-icon icon="iconamoon:home-bold" class="mr-4 text-xl" />
 						Home
 					</a>

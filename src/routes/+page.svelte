@@ -1,6 +1,7 @@
 <script lang="ts">
 	import YoutubeEmbed from '$lib/components/YoutubeEmbed.svelte';
 	import src from '$lib/assets/images/landing/two_boats.jpg?w=1200&imagetools';
+	import { base } from '$app/paths';
 </script>
 
 <section
@@ -21,7 +22,9 @@
 				Winner of the US Sailing 2022 Robie Pierce Award for excellence in Adaptive Sailing.
 			</p>
 			<p class="h2 flex items-center gap-2">
-				<a href="/gosailing" class="text-white btn bg-primary-700 w-fit text-4xl"> Click Here </a>
+				<a href="{base}/gosailing" class="text-white btn bg-primary-700 w-fit text-4xl">
+					Click Here
+				</a>
 				to begin your journey!
 			</p>
 		</header>

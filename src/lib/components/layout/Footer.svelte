@@ -2,6 +2,7 @@
 	import logo from '$lib/assets/images/logos/CSSD_EEM_Logo2.jpg';
 	import { navigation, resources } from '$lib/navigation';
 	import Carousel from '../Carousel.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <footer class="bg-surface-50">
@@ -12,11 +13,11 @@
 				class="flex flex-col flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
 			>
 				<li>
-					<a href="/gosailing">Go Sailing! (Application)</a>
+					<a href="{base}/gosailing">Go Sailing! (Application)</a>
 				</li>
 				{#each navigation as { href, text }}
 					<li>
-						<a {href}>{text}</a>
+						<a href="{base}/{href}">{text}</a>
 					</li>
 				{/each}
 			</ul>
@@ -25,7 +26,7 @@
 			>
 				{#each resources as { href, text }}
 					<li>
-						<a {href}>{text}</a>
+						<a href="{base}/{href}">{text}</a>
 					</li>
 				{/each}
 			</ul>

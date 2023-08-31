@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { navigation } from '$lib/navigation';
+	import { base } from '$app/paths';
 </script>
 
-<a href="/gosailing" class="shadow btn font-bold 'btn variant-filled-primary w-full">
+<a href="{base}/gosailing" class="shadow btn font-bold 'btn variant-filled-primary w-full">
 	Go Sailing!
 </a>
 
@@ -11,7 +12,7 @@
 		<li />
 		{#each navigation as { href, text, icon }}
 			<li>
-				<a class="anchor" {href}>{text}</a>
+				<a class="anchor" href="{base}/{href}">{text}</a>
 			</li>
 		{/each}
 	</ul>

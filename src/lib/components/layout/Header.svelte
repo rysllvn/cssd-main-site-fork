@@ -8,6 +8,7 @@
 
 	// assets
 	import logo from '$lib/assets/images/logos/CSSD_EEM_Logo2.jpg';
+	import { base } from '$app/paths';
 
 	function drawerOpen(): void {
 		drawerStore.open({});
@@ -27,7 +28,7 @@
 					<iconify-icon icon="ci:hamburger-lg" class="text-4xl" />
 				</span>
 			</button>
-			<a class="flex items-center gap-2" href="/">
+			<a class="flex items-center gap-2" href="{base}/">
 				<img class="rounded-lg min-w-16 w-16" src={logo} alt="Challenged Sailors" />
 				<span class="hidden md:block text-2xl">Challenged Sailors San Diego</span>
 			</a>
