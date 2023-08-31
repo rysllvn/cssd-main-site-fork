@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	// import type { PageData } from './$types';
 	import ApplicationForm from '$lib/components/ApplicationForm.svelte';
 
 	import one from '$lib/assets/images/gosailing/one.jpeg?w=800&imagetools';
 	import two from '$lib/assets/images/gosailing/two.jpg?w=400&imagetools';
 
-	export let data: PageData;
+	// export let data: PageData;
 </script>
 
 <header>
@@ -29,5 +29,5 @@
 	</div>
 </section>
 <hr />
-<ApplicationForm accessKey={data.accessKey} />
+<ApplicationForm />
 <img class="shadow grid rounded" src={one} alt="" />
