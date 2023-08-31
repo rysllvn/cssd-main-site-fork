@@ -2,6 +2,8 @@
 	import { ProgressRadial, modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings } from '@skeletonlabs/skeleton';
 
+	export let accessKey = 'YOUR_ACCESS_KEY_HERE';
+
 	let submitting = false;
 
 	let name = '';
@@ -72,7 +74,7 @@
 	class="shadow bg-surface-100 p-2 lg:p-8 rounded-lg max-h-full overflow-y-auto flex flex-col"
 	on:submit|preventDefault={handleSubmit}
 >
-	<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+	<input type="hidden" name="access_key" value={accessKey} />
 	<h2 class="h2 self-center">Sailing Application</h2>
 	<div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 mb-4">
 		<div class="col-span-6 sm:col-span-4">

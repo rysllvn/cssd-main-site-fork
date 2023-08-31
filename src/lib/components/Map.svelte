@@ -15,9 +15,6 @@
 			center: [-117.19326258246849, 32.7287],
 			zoom: 14
 		});
-		map.on('click', (e) => {
-			console.log(e);
-		});
 		// Set marker options.
 		const marker = new mapboxgl.Marker({
 			color: '#86D0CB',
