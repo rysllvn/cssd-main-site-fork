@@ -11,6 +11,9 @@
 			<ul
 				class="flex flex-col flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
 			>
+				<li>
+					<a href="/gosailing">Go Sailing! (Application)</a>
+				</li>
 				{#each navigation as { href, text }}
 					<li>
 						<a {href}>{text}</a>
@@ -28,13 +31,13 @@
 			</ul>
 			<Carousel />
 			<div class="flex gap-2 items-center">
-				<a href="https://www.facebook.com/challengedsailors/">
+				<a target="_blank" href="https://www.facebook.com/challengedsailors/">
 					<iconify-icon icon="logos:facebook" class="text-4xl hover:scale-110" />
 				</a>
-				<a href="https://www.instagram.com/challengedsailors">
+				<a target="_blank" href="https://www.instagram.com/challengedsailors">
 					<iconify-icon icon="skill-icons:instagram" class="text-4xl hover:scale-110" />
 				</a>
-				<a href="https://twitter.com/challsailSD">
+				<a target="_blank" href="https://twitter.com/challsailSD">
 					<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" />
 				</a>
 			</div>

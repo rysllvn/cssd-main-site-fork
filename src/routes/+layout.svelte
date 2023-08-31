@@ -25,6 +25,12 @@
 
 	// Modal
 	import { Modal } from '@skeletonlabs/skeleton';
+
+	import { afterNavigate } from '$app/navigation';
+
+	afterNavigate(() => {
+		document.getElementById('page')?.scrollTo(0, 0);
+	});
 </script>
 
 <Modal />

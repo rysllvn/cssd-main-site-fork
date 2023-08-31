@@ -67,17 +67,17 @@
 	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
 		<h2 class="font-bold">Social Media</h2>
 		<div class="flex justify-center gap-6 items-center w-full">
-			<a href="https://www.facebook.com/challengedsailors/">
+			<a target="_blank" href="https://www.facebook.com/challengedsailors/">
 				<iconify-icon icon="logos:facebook" class="text-4xl hover:scale-110" alt="facebook" />
 			</a>
-			<a href="https://www.instagram.com/challengedsailors">
+			<a target="_blank" href="https://www.instagram.com/challengedsailors">
 				<iconify-icon
 					icon="skill-icons:instagram"
 					class="text-4xl hover:scale-110"
 					alt="instagram"
 				/>
 			</a>
-			<a href="https://twitter.com/challsailSD">
+			<a target="_blank" href="https://twitter.com/challsailSD">
 				<iconify-icon icon="logos:twitter" class="text-2xl hover:scale-110" alt="twitter" />
 			</a>
 		</div>
