@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ProgressRadial, modalStore } from '@skeletonlabs/skeleton';
+	import { ProgressRadial, SlideToggle, modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings } from '@skeletonlabs/skeleton';
 
 	export let accessKey = 'YOUR_ACCESS_KEY_HERE';
@@ -9,6 +9,7 @@
 	let name = '';
 	let email = '';
 	let number = '';
+	let participantOrVolunteer = 'participate';
 	let about = '';
 	let experience = '';
 	let volunteerRole = '';
@@ -21,6 +22,7 @@
 		name = '';
 		email = '';
 		number = '';
+		participantOrVolunteer = 'participate';
 		about = '';
 		experience = '';
 		volunteerRole = '';
@@ -124,9 +126,26 @@
 		<hr class="col-span-6 my-8" />
 
 		<div class="col-span-6 lg:col-span-3">
-			<label for="volunteer role" class="label"
-				>If wanting to Volunteer, are you most interested in</label
+			<label for="participant or volunteer" class="label"
+				>Are you interested in participating or volunteering?</label
 			>
+			<select
+				name="participant or volunteer"
+				class="select"
+				size="2"
+				bind:value={participantOrVolunteer}
+			>
+				<option value="participate">Participate</option>
+				<option value="volunteer">Volunteer</option>
+			</select>
+		</div>
+
+		<div
+			class="{participantOrVolunteer === 'volunteer'
+				? 'grid'
+				: 'hidden lg:block invisible'} col-span-6 lg:col-span-3"
+		>
+			<label for="volunteer role" class="label">Are you most interested in</label>
 			<select name="volunteer role" class="select" size="3" bind:value={volunteerRole}>
 				<option value="companion sailor">Companion Sailor</option>
 				<option value="dock support">Dock Support</option>
@@ -153,37 +172,37 @@
 
 		<hr class="col-span-6 my-8" />
 
-		<div class="col-span-6">
-			<label class="flex gap-3 items-center">
-				<input
-					name="has current physical disability or medical limitation"
-					class="checkbox"
-					type="checkbox"
-					bind:value={currentDisability}
-				/>
-				<p>Do you currently have any physical disabilities or medical limitations?</p>
-			</label>
-		</div>
-
-		<div class="col-span-6">
-			<label class="flex gap-3 items-center">
-				<input
-					name="requires support down ramp or into boat"
-					class="checkbox"
-					type="checkbox"
-					bind:value={requiresSupport}
-				/>
-				<p>Do you require any special support getting down a ramp and into/out of a sailboat?</p>
-			</label>
-		</div>
-		<div class="col-span-6">
-			<label class="flex gap-3 items-center">
-				<input name="uses wheelchair" class="checkbox" type="checkbox" bind:value={wheelchair} />
-				<p>Do you use a wheelchair?</p>
-			</label>
-		</div>
-		<hr class="col-span-6 my-8" />
-
+		{#if participantOrVolunteer === 'participate'}
+			<div class="col-span-6">
+				<label class="flex gap-3 items-center">
+					<input
+						name="has current physical disability or medical limitation"
+						class="checkbox"
+						type="checkbox"
+						bind:value={currentDisability}
+					/>
+					<p>Do you currently have any physical disabilities or medical limitations?</p>
+				</label>
+			</div>
+			<div class="col-span-6">
+				<label class="flex gap-3 items-center">
+					<input
+						name="requires support down ramp or into boat"
+						class="checkbox"
+						type="checkbox"
+						bind:value={requiresSupport}
+					/>
+					<p>Do you require any special support getting down a ramp and into/out of a sailboat?</p>
+				</label>
+			</div>
+			<div class="col-span-6">
+				<label class="flex gap-3 items-center">
+					<input name="uses wheelchair" class="checkbox" type="checkbox" bind:value={wheelchair} />
+					<p>Do you use a wheelchair?</p>
+				</label>
+			</div>
+			<hr class="col-span-6 my-8" />
+		{/if}
 		<textarea
 			name="about"
 			class="textarea col-span-6"
