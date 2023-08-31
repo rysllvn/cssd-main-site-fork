@@ -60,7 +60,7 @@
 		<iconify-icon icon="tabler:car" class="text-6xl" />
 		<p>
 			See our
-			<a href="/location" class="anchor">Getting Here page</a> for information about transportation options.
+			<a href="location" class="anchor">Getting Here page</a> for information about transportation options.
 		</p>
 	</li>
 
