@@ -1,38 +1,27 @@
-# create-svelte
+# Challenged Sailors San Diego Website (challengedsailors.org)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<strong>Status</strong> - In Development
 
-## Creating a project
+This is the repository for Challenged Sailors San Diego's new website. The goal of the site is to provide information about the organization and to help attract potential participants, volunteers, and donors.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Currently deployed to [https://challenged-sailors-san-diego.github.io/main-site/](https://challenged-sailors-san-diego.github.io/main-site/).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Tech Stack
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [pnpm](https://pnpm.io/) for building and development.
+- [SvelteKit](https://kit.svelte.dev/) as a framework.
+- [SkeletonUI v1.0](https://v1.skeleton.dev/) as a component library
+  - [TailwindCSS](https://tailwindcss.com/) as styling and is baked into skeleton ui.
+- [Github Pages](https://pages.github.com/) for hosting as the site is completely static.
 
-## Developing
+## Setting up for development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+From the root directory.
 
 ```bash
-npm run build
+pnpm install
+
+pnpm dev
+
+# press o to open up the site in a new tab
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
