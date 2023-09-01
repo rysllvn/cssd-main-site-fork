@@ -66,8 +66,8 @@
 	<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		{#each boardMembers as { name, title, src, bio }}
 			<li class="card bg-primary-100 p-4 shadow h-fit">
-				<div class="my-auto mr-4 mb-4 flex flex-col w-72 h-fit items-center gap-4 float-left">
-					<Avatar {src} width="w-48" />
+				<div class="my-auto mb-1 flex flex-col w-72 h-fit items-center gap-4 lg:float-left">
+					<Avatar {src} width="w-36 lg:w-48" />
 					<div>
 						<h3 class="h3">{name}</h3>
 						<h4>{title}</h4>
