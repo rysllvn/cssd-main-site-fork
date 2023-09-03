@@ -70,7 +70,7 @@
 	<div class="card p-5 bg-primary-100 flex gap-8 items-center shadow-sm">
 		<iconify-icon icon="mdi:bus" class="text-4xl" />
 		<div>
-			<a target="_blank" class="anchor" href="http://www.sdmts.com/" target="_blank"> MTS buses and trolleys </a>
+			<a target="_blank" class="anchor" href="http://www.sdmts.com/"> MTS buses and trolleys </a>
 			serve much of central SD County, Bus routes 923 and 992 stop about 0.6 mi. from our location at
 			Sunroad Resort Marina.
 			<a target="_blank" class="anchor" href="http://www.sdmts.com/MTS/accessibility.asp">
