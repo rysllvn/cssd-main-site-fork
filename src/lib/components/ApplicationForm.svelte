@@ -4,12 +4,15 @@
 
 	export let accessKey = 'YOUR_ACCESS_KEY_HERE';
 
+	const ADAPTIVE_SAILOR = 'adaptive sailor';
+	const VOLUNTEER = 'volunteer';
+
 	let submitting = false;
 
 	let name = '';
 	let email = '';
 	let number = '';
-	let sailorOrVolunteer = 'sailor';
+	let sailorOrVolunteer = ADAPTIVE_SAILOR;
 	let about = '';
 	let experience = '';
 	let volunteerRole = '';
@@ -22,7 +25,7 @@
 		name = '';
 		email = '';
 		number = '';
-		sailorOrVolunteer = 'adaptive sailor';
+		sailorOrVolunteer = ADAPTIVE_SAILOR;
 		about = '';
 		experience = '';
 		volunteerRole = '';
@@ -130,13 +133,13 @@
 				>Are you interested in adaptive sailing or volunteering?</label
 			>
 			<select name="sailor or volunteer" class="select" size="2" bind:value={sailorOrVolunteer}>
-				<option value="adaptive sailor">Adaptive Sailing</option>
-				<option value="volunteer">Volunteering</option>
+				<option value={ADAPTIVE_SAILOR}>Adaptive Sailing</option>
+				<option value={VOLUNTEER}>Volunteering</option>
 			</select>
 		</div>
 
 		<div
-			class="{sailorOrVolunteer === 'volunteer'
+			class="{sailorOrVolunteer === VOLUNTEER
 				? 'grid'
 				: 'hidden lg:block invisible'} col-span-6 lg:col-span-3"
 		>
@@ -147,7 +150,7 @@
 				class="select"
 				size="3"
 				bind:value={volunteerRole}
-				required={sailorOrVolunteer === 'volunteer'}
+				required={sailorOrVolunteer === VOLUNTEER}
 			>
 				<option value="companion sailor">Companion Sailor</option>
 				<option value="dock support">Dock Support</option>
@@ -156,7 +159,7 @@
 		</div>
 
 		<div class="col-span-6 lg:col-span-3">
-			<label for="experience" class="label">How would you describe your sailing experience</label>
+			<label for="experience" class="label">How would you describe your sailing experience?</label>
 			<select name="experience" class="select" size="4" required bind:value={experience}>
 				<option value="newbie">Total newbie</option>
 				<option value="few times">Been sailing a couple times</option>
@@ -165,7 +168,7 @@
 			</select>
 		</div>
 		<div class="col-span-6 lg:col-span-3">
-			<label for="preferred days" class="label">What times or dates are you most available</label>
+			<label for="preferred days" class="label">What times or dates are you most available?</label>
 			<select name="preferred days" multiple class="select" size="2" required bind:value={days}>
 				<option value="Friday">Friday 11:30am-3:00pm</option>
 				<option value="Saturday">Saturday 11:30am-3:00pm</option>
@@ -174,7 +177,7 @@
 
 		<hr class="col-span-6 my-8" />
 
-		{#if sailorOrVolunteer === 'sailor'}
+		{#if sailorOrVolunteer === ADAPTIVE_SAILOR}
 			<div class="col-span-6">
 				<label class="flex gap-3 items-center">
 					<input
