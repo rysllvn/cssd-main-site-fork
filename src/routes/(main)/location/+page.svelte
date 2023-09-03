@@ -24,6 +24,7 @@
 
 			<div>
 				Dock D, West end of <a
+					target="_blank"
 					class="anchor"
 					href="https://shmarinas.com/locations/safe-harbor-sunroad/"
 					>Sunroad Marina
@@ -44,6 +45,7 @@
 			We have a gathering spot on the top deck at the <a
 				class="anchor"
 				href="https://shmarinas.com/locations/safe-harbor-sunroad/"
+				target="_blank"
 				>Sunroad Marina.
 			</a> The clubhouse offers bathrooms.
 		</p>
@@ -68,10 +70,10 @@
 	<div class="card p-5 bg-primary-100 flex gap-8 items-center shadow-sm">
 		<iconify-icon icon="mdi:bus" class="text-4xl" />
 		<div>
-			<a class="anchor" href="http://www.sdmts.com/" target="_blank"> MTS buses and trolleys </a>
+			<a target="_blank" class="anchor" href="http://www.sdmts.com/" target="_blank"> MTS buses and trolleys </a>
 			serve much of central SD County, Bus routes 923 and 992 stop about 0.6 mi. from our location at
 			Sunroad Resort Marina.
-			<a class="anchor" href="http://www.sdmts.com/MTS/accessibility.asp">
+			<a target="_blank" class="anchor" href="http://www.sdmts.com/MTS/accessibility.asp">
 				Information for riders with disabilities.
 			</a>
 		</div>
@@ -83,7 +85,11 @@
 			<iconify-icon icon="mdi:wheelchair" class="text-4xl" />
 		</div>
 		<p>
-			<a class="anchor" href="https://www.sdmts.com/transit-services/mts-access-paratransit">
+			<a
+				target="_blank"
+				class="anchor"
+				href="https://www.sdmts.com/transit-services/mts-access-paratransit"
+			>
 				MTS Access
 			</a>
 			operates wheelchair lift-equipped buses which provide transportation to transit riders whose disabilities

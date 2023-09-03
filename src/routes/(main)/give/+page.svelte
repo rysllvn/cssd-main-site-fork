@@ -1,6 +1,6 @@
 <script lang="ts">
 	import SponsorshipCloud from '$lib/components/SponsorshipCloud.svelte';
-	import one from '$lib/assets/images/give/one.jpg?w=500&imagetools';
+	import one from '$lib/assets/images/give/one.jpg?w=450&imagetools';
 	import two from '$lib/assets/images/give/two.jpg?w=400&imagetools';
 	import PayPal from '$lib/components/PayPal.svelte';
 
@@ -32,11 +32,9 @@
 			{/each}
 		</ul>
 	</div>
-	<img
-		class="lg:w-2/5 rounded shadow-sm"
-		src={one}
-		alt="Peter accepting Channel Cruising Club donation"
-	/>
+	<div class="lg:w-2/5 flex items-center justify-center">
+		<img class="rounded shadow-sm" src={one} alt="Peter accepting Channel Cruising Club donation" />
+	</div>
 </section>
 <hr />
 <section class="flex flex-col lg:flex-row-reverse gap-8">
@@ -50,7 +48,9 @@
 			difference in the recreational and therapeutic lives of the disabled.
 		</p>
 	</div>
-	<img class="lg:w-2/5 rounded shadow-sm" src={two} alt="Group posing after sail with donation" />
+	<div class="lg:w-2/5">
+		<img class="rounded shadow-sm" src={two} alt="Group posing after sail with donation" />
+	</div>
 </section>
 
 <hr />

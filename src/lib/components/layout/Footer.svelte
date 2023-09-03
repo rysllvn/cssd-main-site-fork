@@ -13,7 +13,7 @@
 				class="flex flex-col flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
 			>
 				<li>
-					<a href="{base}/gosailing">Go Sailing! (Application)</a>
+					<a href="{base}/gosailing">Adaptive Sailing - Go Sailing!</a>
 				</li>
 				{#each navigation as { href, text }}
 					<li>

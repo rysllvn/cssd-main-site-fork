@@ -9,7 +9,7 @@
 	let name = '';
 	let email = '';
 	let number = '';
-	let participantOrVolunteer = 'participate';
+	let sailorOrVolunteer = 'sailor';
 	let about = '';
 	let experience = '';
 	let volunteerRole = '';
@@ -22,7 +22,7 @@
 		name = '';
 		email = '';
 		number = '';
-		participantOrVolunteer = 'participate';
+		sailorOrVolunteer = 'adaptive sailor';
 		about = '';
 		experience = '';
 		volunteerRole = '';
@@ -126,27 +126,29 @@
 		<hr class="col-span-6 my-8" />
 
 		<div class="col-span-6 lg:col-span-3">
-			<label for="participant or volunteer" class="label"
-				>Are you interested in participating or volunteering?</label
+			<label for="sailor or volunteer" class="label"
+				>Are you interested in adaptive sailing or volunteering?</label
 			>
-			<select
-				name="participant or volunteer"
-				class="select"
-				size="2"
-				bind:value={participantOrVolunteer}
-			>
-				<option value="participate">Participate</option>
-				<option value="volunteer">Volunteer</option>
+			<select name="sailor or volunteer" class="select" size="2" bind:value={sailorOrVolunteer}>
+				<option value="adaptive sailor">Adaptive Sailing</option>
+				<option value="volunteer">Volunteering</option>
 			</select>
 		</div>
 
 		<div
-			class="{participantOrVolunteer === 'volunteer'
+			class="{sailorOrVolunteer === 'volunteer'
 				? 'grid'
 				: 'hidden lg:block invisible'} col-span-6 lg:col-span-3"
 		>
 			<label for="volunteer role" class="label">Are you most interested in</label>
-			<select name="volunteer role" class="select" size="3" bind:value={volunteerRole}>
+			<select
+				multiple
+				name="volunteer role"
+				class="select"
+				size="3"
+				bind:value={volunteerRole}
+				required={sailorOrVolunteer === 'volunteer'}
+			>
 				<option value="companion sailor">Companion Sailor</option>
 				<option value="dock support">Dock Support</option>
 				<option value="administrative">Administrative</option>
@@ -172,7 +174,7 @@
 
 		<hr class="col-span-6 my-8" />
 
-		{#if participantOrVolunteer === 'participate'}
+		{#if sailorOrVolunteer === 'sailor'}
 			<div class="col-span-6">
 				<label class="flex gap-3 items-center">
 					<input

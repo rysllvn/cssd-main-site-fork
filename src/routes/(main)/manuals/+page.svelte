@@ -35,7 +35,7 @@
 	<ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
 		{#each manuals as { href, title }}
 			<li class="card p-5 bg-primary-100 flex items-center shadow-sm gap-8">
-				<a class="anchor" {href} download>{title}</a>
+				<a target="_blank" class="anchor" {href} download>{title}</a>
 			</li>
 		{/each}
 	</ul>

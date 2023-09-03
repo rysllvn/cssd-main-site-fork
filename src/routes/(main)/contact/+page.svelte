@@ -13,7 +13,7 @@
 </div>
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
 	<li class="card p-5 bg-primary-100 shadow-sm flex items-center">
-		<a href="emailto:info@challengedsailors.org" class="flex items-center anchor gap-8">
+		<a href="mailto:info@challengedsailors.org" class="flex items-center anchor gap-8">
 			<iconify-icon icon="ic:baseline-email" class="text-6xl text-primary-800" />
 			info@challengedsailors.org
 		</a>
@@ -25,7 +25,6 @@
 			<div>PO Box 6994, San Diego CA 92166</div>
 		</div>
 	</li>
-
 	<li class="card p-5 bg-primary-100 flex gap-8 items-center shadow-sm">
 		<iconify-icon icon="twemoji:sailboat" class="text-6xl" />
 		<div class="flex flex-col">
@@ -43,13 +42,13 @@
 				Dock D, West end of <a
 					class="anchor"
 					href="https://shmarinas.com/locations/safe-harbor-sunroad/"
+					target="_blank"
 					>Sunroad Marina
 				</a>
 				parking lot
 			</div>
 		</div>
 	</li>
-
 	<li class="card p-5 bg-primary-100 flex gap-8 items-center shadow-sm">
 		<iconify-icon icon="ic:round-phone" class="text-6xl" />
 		<div>
@@ -63,7 +62,6 @@
 			<a href="location" class="anchor">Getting Here page</a> for information about transportation options.
 		</p>
 	</li>
-
 	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
 		<h2 class="font-bold">Social Media</h2>
 		<div class="flex justify-center gap-6 items-center w-full">
