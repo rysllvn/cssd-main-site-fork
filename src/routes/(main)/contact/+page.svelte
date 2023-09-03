@@ -59,7 +59,8 @@
 		<iconify-icon icon="tabler:car" class="text-6xl" />
 		<p>
 			See our
-			<a href="location" class="anchor">Getting Here page</a> for information about transportation options.
+			<a target="_blank" href="location" class="anchor">Getting Here page</a> for information about transportation
+			options.
 		</p>
 	</li>
 	<li class="card p-5 bg-primary-100 flex gap-3 items-center shadow-sm flex-col">
