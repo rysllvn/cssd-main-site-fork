@@ -34,8 +34,9 @@
 <section>
 	<ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
 		{#each manuals as { href, title }}
-			<li class="card p-5 bg-primary-100 flex items-center shadow-sm gap-8">
-				<a target="_blank" class="anchor" {href} download>{title}</a>
+			<li class="card p-5 bg-primary-100 flex items-center shadow-sm gap-4">
+				<iconify-icon icon="teenyicons:pdf-outline" class="text-3xl" />
+				<a class="anchor" {href} download>{title}</a>
 			</li>
 		{/each}
 	</ul>
