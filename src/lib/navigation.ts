@@ -1,7 +1,7 @@
 export const navigation = [
-	{ href: 'calendar', text: 'Calendar', icon: 'mdi:calendar' },
 	{ href: 'volunteer', text: 'Volunteer', icon: 'ph:hand' },
 	{ href: 'give', text: 'Give', icon: 'material-symbols:volunteer-activism' },
+	{ href: 'calendar', text: 'Calendar', icon: 'mdi:calendar' },
 	{ href: 'about', text: 'About', icon: 'mdi:about' },
 	{ href: 'contact', text: 'Contact', icon: 'material-symbols:contact-mail-outline' }
 ];
