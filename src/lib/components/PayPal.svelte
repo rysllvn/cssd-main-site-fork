@@ -1,4 +1,4 @@
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_paypal">
 	<input type="hidden" name="cmd" value="_donations" /><input
 		type="hidden"
 		name="currency_code"
