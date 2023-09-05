@@ -21,5 +21,10 @@ export const resources = [
 		href: 'forms',
 		text: 'Forms',
 		icon: 'mdi:form-outline'
+	},
+	{
+		href: 'links',
+		text: 'Helpful Links',
+		icon: 'mdi:web'
 	}
 ];
